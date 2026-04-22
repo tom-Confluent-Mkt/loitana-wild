@@ -1,4 +1,5 @@
 import { type FormEvent } from 'react'
+import { useReveal } from '../hooks/useReveal'
 
 const riverImg = '/images/1%20(12).jpeg'
 const tracksImg = '/images/1%20(14).jpeg'
@@ -29,6 +30,7 @@ const inputClass =
   'w-full bg-surface-container-highest border-none focus:ring-0 p-4 font-body text-on-surface-variant transition-all outline-none rounded-DEFAULT focus:bg-surface-container-low'
 
 export default function Inquiry() {
+  useReveal()
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     // form submission handled externally (Verso / backend)
@@ -44,7 +46,7 @@ export default function Inquiry() {
         }}
       >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between gap-12">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl reveal">
             <span className="font-label text-sm uppercase tracking-[0.2em] text-secondary mb-6 block">
               Begin the adventure
             </span>
@@ -65,7 +67,7 @@ export default function Inquiry() {
       <section className="px-8 pb-32 pt-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           {/* Left Column */}
-          <div className="lg:col-span-7 space-y-12">
+          <div className="lg:col-span-7 space-y-12 reveal">
             {/* Testimonials */}
             <div className="space-y-8">
               <div>
@@ -180,7 +182,7 @@ export default function Inquiry() {
           </div>
 
           {/* Right Column */}
-          <div className="lg:col-span-5 space-y-16">
+          <div className="lg:col-span-5 space-y-16 reveal" style={{ transitionDelay: '150ms' }}>
             <div className="relative group">
               <div className="aspect-[4/5] overflow-hidden bg-surface-container-high rounded-lg">
                 <img

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useReveal } from '../hooks/useReveal'
 
 const featureImg = '/images/1%20(15).jpeg'
 
@@ -88,6 +89,7 @@ const catalog = [
 const filters = ['All', 'Culinary', 'Exploration', 'Community', 'Wellness']
 
 export default function TailorYourStay() {
+  useReveal()
   const [activeFilter, setActiveFilter] = useState('All')
   const visible = catalog.filter(
     (item) => activeFilter === 'All' || item.filterKey === activeFilter,
@@ -106,7 +108,7 @@ export default function TailorYourStay() {
               <span className="w-6 h-px bg-primary" />
               Personalized Luxury
             </span>
-            <h1 className="font-headline text-6xl md:text-8xl tracking-tight leading-[0.9] mb-8">
+            <h1 className="reveal font-headline text-6xl md:text-8xl tracking-tight leading-[0.9] mb-8">
               Adventures <br />
               <span className="italic text-on-surface-variant">on Your Terms</span>
             </h1>
@@ -143,7 +145,7 @@ export default function TailorYourStay() {
           </div>
           <div className="relative z-10 flex flex-col md:flex-row justify-between items-end gap-6">
             <div className="max-w-xl">
-              <h2 className="font-headline text-5xl tracking-tight mb-2">The Bespoke Catalog</h2>
+              <h2 className="reveal font-headline text-5xl tracking-tight mb-2">The Bespoke Catalog</h2>
               <p className="text-on-surface-variant font-headline italic text-xl">
                 Curated experiences to deepen your connection with the wild.
               </p>
@@ -258,7 +260,7 @@ export default function TailorYourStay() {
             <div className="absolute -top-12 -left-12 text-[12rem] font-headline text-primary/5 select-none leading-none">
               Stay
             </div>
-            <h2 className="font-headline text-5xl mb-8 relative z-10">
+            <h2 className="reveal font-headline text-5xl mb-8 relative z-10">
               Bespoke means <br />
               <span className="italic">without compromise.</span>
             </h2>
@@ -278,16 +280,16 @@ export default function TailorYourStay() {
               )}
             </div>
           </div>
-          {/* Organic image pair */}
-          <div className="grid grid-cols-2 gap-4 items-end">
-            <div className="overflow-hidden shadow-xl rounded-[2.5rem] aspect-[3/4] mt-10">
+          {/* Organic image pair — stacked on mobile, side-by-side on sm+ */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
+            <div className="overflow-hidden shadow-xl rounded-[2rem] aspect-[4/3] sm:aspect-[3/4] sm:mt-10 reveal-scale">
               <img
                 src="/images/1%20(5).jpeg"
                 alt="Cottage perched on the cliff edge"
                 className="w-full h-full object-cover grayscale-[0.15] hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="overflow-hidden shadow-xl rounded-[2rem] rounded-tl-[4rem] aspect-[3/4]">
+            <div className="overflow-hidden shadow-xl rounded-[2rem] aspect-[4/3] sm:aspect-[3/4] reveal-scale" style={{ transitionDelay: '100ms' }}>
               <img
                 src="/images/1%20(2).jpeg"
                 alt="Thatched hut at golden sunset"

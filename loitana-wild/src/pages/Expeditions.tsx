@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useReveal } from '../hooks/useReveal'
 
 const expeditions = [
   {
@@ -46,6 +47,7 @@ const expeditions = [
 ]
 
 export default function Expeditions() {
+  useReveal()
   return (
     <main>
       {/* Hero */}
@@ -62,11 +64,11 @@ export default function Expeditions() {
           <span className="font-label uppercase tracking-[0.4em] text-[10px] text-white/70 mb-6 block font-bold">
             Private Expeditions
           </span>
-          <h1 className="font-headline text-6xl md:text-8xl text-white leading-[0.9] tracking-tighter mb-6">
+          <h1 className="reveal font-headline text-6xl md:text-8xl text-white leading-[0.9] tracking-tighter mb-6">
             The Wild <br />
             <span className="italic">on Your Terms</span>
           </h1>
-          <p className="text-white/80 text-xl max-w-xl font-light leading-relaxed">
+          <p className="reveal text-white/80 text-xl max-w-xl font-light leading-relaxed" style={{ transitionDelay: '100ms' }}>
             Every expedition at Loitana Wild is private by design. No shared vehicles, no fixed schedules—just you, an
             expert guide, and 4,000 hectares of untouched Africa.
           </p>
@@ -77,17 +79,18 @@ export default function Expeditions() {
       <section className="py-32 px-0 md:px-8 bg-surface">
         <div className="max-w-7xl mx-auto px-8 md:px-0">
           <div className="mb-20">
-            <h2 className="font-headline text-5xl mb-4 tracking-tight">Choose Your Adventure</h2>
-            <p className="text-on-surface-variant text-lg max-w-2xl">
+            <h2 className="reveal font-headline text-5xl mb-4 tracking-tight">Choose Your Adventure</h2>
+            <p className="reveal text-on-surface-variant text-lg max-w-2xl" style={{ transitionDelay: '80ms' }}>
               Select from our curated menu, or work with our team to design something entirely your own.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8">
-            {expeditions.map((exp) => (
+            {expeditions.map((exp, i) => (
               <div
                 key={exp.title}
-                className="group bg-surface-container-lowest overflow-hidden md:rounded-xl border-b border-outline-variant/20 md:border hover:border-primary/30 transition-all duration-500 hover:shadow-xl"
+                className="group bg-surface-container-lowest overflow-hidden md:rounded-xl border-b border-outline-variant/20 md:border hover:border-primary/30 transition-all duration-500 hover:shadow-xl reveal"
+                style={{ transitionDelay: `${i * 60}ms` }}
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img

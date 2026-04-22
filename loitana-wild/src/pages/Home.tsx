@@ -1,40 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useReveal } from '../hooks/useReveal'
 
 const heroImg = '/images/1%20(1).jpeg'
 const sanctuaryImg = '/images/1%20(3).jpeg'
 const ctaImg = '/images/1%20(7).jpeg'
 
 const episodes = [
-  {
-    id: '01',
-    title: 'Twilight Migration',
-    img: '/images/1%20(2).jpeg',
-    alt: 'The cottage nestled in nature at golden hour',
-  },
-  {
-    id: '02',
-    title: 'Cultural Roots',
-    img: '/images/1%20(8).jpeg',
-    alt: 'Maasai guide with guests on a rocky outcrop',
-  },
-  {
-    id: '03',
-    title: 'Predator Hour',
-    img: '/images/1%20(14).jpeg',
-    alt: 'Animal paw print in the mud',
-  },
-  {
-    id: '04',
-    title: 'Nocturnal Silence',
-    img: '/images/1%20(9).jpeg',
-    alt: 'Dramatic rock formation at dusk',
-  },
-  {
-    id: '05',
-    title: 'The First Light',
-    img: '/images/1%20(11).jpeg',
-    alt: 'Walking through golden grass at dawn',
-  },
+  { id: '01', title: 'Twilight Migration', img: '/images/1%20(2).jpeg', alt: 'The cottage nestled in nature at golden hour' },
+  { id: '02', title: 'Cultural Roots', img: '/images/1%20(8).jpeg', alt: 'Maasai guide with guests on a rocky outcrop' },
+  { id: '03', title: 'Predator Hour', img: '/images/1%20(14).jpeg', alt: 'Animal paw print in the mud' },
+  { id: '04', title: 'Nocturnal Silence', img: '/images/1%20(9).jpeg', alt: 'Dramatic rock formation at dusk' },
+  { id: '05', title: 'The First Light', img: '/images/1%20(11).jpeg', alt: 'Walking through golden grass at dawn' },
 ]
 
 const bentoItems = [
@@ -62,24 +38,26 @@ const bentoItems = [
 ]
 
 export default function Home() {
+  useReveal()
+
   return (
     <main>
       {/* Hero */}
-      <section className="relative h-[921px] flex items-center overflow-hidden">
+      <section className="relative h-[100svh] min-h-[640px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src={heroImg} alt="Maasai person on a path in the savannah" className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-gradient" />
         </div>
         <div className="relative z-10 w-full px-8 md:px-20">
           <div className="max-w-4xl">
-            <span className="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 mb-6 text-xs font-bold tracking-[0.2em] uppercase rounded">
+            <span className="reveal inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 mb-6 text-xs font-bold tracking-[0.2em] uppercase rounded">
               The Exclusive Frontier
             </span>
-            <h1 className="text-6xl md:text-8xl font-headline text-white leading-[1.05] tracking-tight mb-8">
+            <h1 className="reveal text-6xl md:text-8xl font-headline text-white leading-[1.05] tracking-tight mb-8" style={{ transitionDelay: '100ms' }}>
               Loitana Wild: 4,000 Hectares. One Guest.{' '}
               <span className="italic">You.</span>
             </h1>
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="reveal flex flex-col md:flex-row gap-4 md:gap-6" style={{ transitionDelay: '200ms' }}>
               <Link
                 to="/the-residence"
                 className="bg-primary text-on-primary px-10 py-5 text-sm uppercase tracking-widest font-bold rounded hover:bg-opacity-90 transition-colors active:scale-95 font-label text-center"
@@ -97,24 +75,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Your Private Sanctuary */}
+      {/* Your Private Sanctuary — text first on mobile */}
       <section className="py-24 md:py-40 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center">
-          <div className="w-full md:w-1/2">
-            <div className="relative -mx-8 md:mx-0">
-              <img
-                src={sanctuaryImg}
-                alt="Traditional stone cottage architecture"
-                className="w-full aspect-[4/5] object-cover shadow-2xl md:rounded-xl"
-              />
-              <div className="absolute -bottom-10 -right-10 hidden lg:block bg-surface-container-low p-8 max-w-xs shadow-xl rounded-xl border border-outline-variant/10">
-                <p className="font-headline text-2xl italic text-primary">
-                  "The only silence is the rhythm of the wild."
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2 space-y-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 md:gap-20 items-center">
+          {/* Text — order-1 on mobile so it appears first */}
+          <div className="w-full md:w-1/2 space-y-8 order-1 md:order-2 reveal">
             <h2 className="text-4xl md:text-5xl font-headline leading-tight text-on-surface">
               Your Private Sanctuary
             </h2>
@@ -138,46 +103,66 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* Image — order-2 on mobile so it appears below text */}
+          <div className="w-full md:w-1/2 order-2 md:order-1">
+            <div className="relative -mx-8 md:mx-0 reveal-scale">
+              <img
+                src={sanctuaryImg}
+                alt="Traditional stone cottage architecture"
+                className="w-full aspect-[4/3] md:aspect-[4/5] object-cover md:rounded-xl shadow-2xl"
+              />
+              <div className="absolute -bottom-10 -right-10 hidden lg:block bg-surface-container-low p-8 max-w-xs shadow-xl rounded-xl border border-outline-variant/10">
+                <p className="font-headline text-2xl italic text-primary">
+                  "The only silence is the rhythm of the wild."
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Visions of the Wild */}
-      <section className="py-24 px-8 bg-surface-container-lowest overflow-hidden">
+      {/* Visions of the Wild — redesigned carousel */}
+      <section className="py-24 bg-surface-container-lowest overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-headline text-primary mb-4 italic">Visions of the Wild</h2>
-            <p className="text-on-surface-variant font-light max-w-2xl mx-auto">
-              Experience the pulse of the conservancy through the lens of those who call it home. Rare moments,
-              captured in the heart of the savannah.
-            </p>
+          <div className="flex items-end justify-between mb-10 px-8">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-headline text-primary italic reveal">Visions of the Wild</h2>
+              <p className="text-on-surface-variant font-light mt-2 max-w-md reveal" style={{ transitionDelay: '100ms' }}>
+                Rare moments, captured in the heart of the savannah.
+              </p>
+            </div>
+            <span className="hidden md:block font-label text-xs uppercase tracking-widest text-outline/60 pb-1">
+              Drag →
+            </span>
           </div>
-          <div className="flex gap-4 md:gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory -mx-8 md:mx-0 px-8 md:px-0">
-            {episodes.map((ep) => (
+          <div className="flex gap-3 overflow-x-auto pb-6 hide-scrollbar snap-x snap-mandatory px-8">
+            {episodes.map((ep, i) => (
               <div
                 key={ep.id}
-                className="flex-none w-64 md:w-72 aspect-[9/16] relative group cursor-pointer snap-start overflow-hidden md:rounded-xl"
+                className={`flex-none snap-start relative group cursor-pointer overflow-hidden md:rounded-2xl ${
+                  i === 0 ? 'w-[72vw] md:w-[380px]' : 'w-[52vw] md:w-[240px]'
+                } aspect-[2/3]`}
               >
                 <img
                   src={ep.img}
                   alt={ep.alt}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform">
-                    <span
-                      className="material-symbols-outlined text-white text-4xl"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
+                  <div className="w-12 h-12 rounded-full bg-white/25 backdrop-blur-sm flex items-center justify-center border border-white/50 transition-all group-hover:scale-110 group-hover:bg-white/40">
+                    <span className="material-symbols-outlined text-white text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>
                       play_arrow
                     </span>
                   </div>
                 </div>
-                <div className="absolute bottom-8 left-6 right-6">
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/70 mb-2 font-label">
-                    Episode {ep.id}
+                <div className="absolute bottom-5 left-5 right-5">
+                  <p className="text-[9px] font-bold tracking-[0.25em] uppercase text-white/60 mb-1 font-label">
+                    Ep. {ep.id}
                   </p>
-                  <h4 className="text-xl font-headline text-white leading-tight">{ep.title}</h4>
+                  <h4 className={`font-headline text-white leading-tight ${i === 0 ? 'text-xl' : 'text-base'}`}>
+                    {ep.title}
+                  </h4>
                 </div>
               </div>
             ))}
@@ -188,23 +173,23 @@ export default function Home() {
       {/* The Experience (Bento) */}
       <section className="py-24 px-8 bg-surface-container-low">
         <div className="max-w-7xl mx-auto">
-          <div className="flex justify-between items-end mb-16">
+          <div className="flex justify-between items-end mb-10 reveal">
             <div className="max-w-xl">
-              <h2 className="text-4xl font-headline mb-4 text-on-surface">The Experience</h2>
+              <h2 className="text-4xl font-headline mb-3 text-on-surface">The Experience</h2>
               <p className="text-on-surface-variant">A curated existence between the sky and the red earth.</p>
             </div>
-            <a
-              href="#"
-              className="text-primary font-bold border-b border-primary/30 hover:border-primary pb-1 transition-all uppercase tracking-widest text-xs font-label"
-            >
+            <a href="#" className="hidden md:block text-primary font-bold border-b border-primary/30 hover:border-primary pb-1 transition-all uppercase tracking-widest text-xs font-label">
               View Full Gallery
             </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-6 h-auto md:h-[800px] -mx-8 md:mx-0">
-            {bentoItems.map((item) => (
+
+          {/* Bento grid — mobile: vertical stack full-bleed; desktop: 12-col grid */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-3 md:gap-6 md:h-[800px] -mx-8 md:mx-0">
+            {bentoItems.map((item, i) => (
               <div
                 key={item.title}
-                className={`${item.colSpan} bg-surface-container-lowest relative overflow-hidden group md:rounded-xl`}
+                className={`${item.colSpan} relative overflow-hidden group md:rounded-xl aspect-[4/3] md:aspect-auto reveal-scale`}
+                style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <img
                   src={item.img}
@@ -212,17 +197,17 @@ export default function Home() {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-10 left-10 text-white">
-                  <h3 className="text-3xl font-headline mb-2">{item.title}</h3>
-                  <p className="text-white/80 max-w-md font-light">{item.desc}</p>
+                <div className="absolute bottom-8 left-8 text-white">
+                  <h3 className="text-2xl md:text-3xl font-headline mb-1">{item.title}</h3>
+                  <p className="text-white/80 max-w-md font-light text-sm md:text-base">{item.desc}</p>
                 </div>
               </div>
             ))}
             {/* Bespoke Living Card */}
-            <div className="md:col-span-8 bg-primary-container flex items-center p-12 relative overflow-hidden rounded-xl">
+            <div className="md:col-span-8 bg-primary-container flex items-center p-8 md:p-12 relative overflow-hidden md:rounded-xl reveal">
               <div className="relative z-10">
-                <h3 className="text-on-primary-container text-4xl font-headline mb-6">Bespoke Living</h3>
-                <p className="text-on-primary-container/80 text-lg max-w-md leading-relaxed mb-8">
+                <h3 className="text-on-primary-container text-3xl md:text-4xl font-headline mb-4 md:mb-6">Bespoke Living</h3>
+                <p className="text-on-primary-container/80 text-base md:text-lg max-w-md leading-relaxed mb-6 md:mb-8">
                   Every meal is a conversation with our chef. Every journey is designed around your curiosity. This is
                   the art of the tailor-made stay.
                 </p>
@@ -234,7 +219,7 @@ export default function Home() {
                 </Link>
               </div>
               <span
-                className="material-symbols-outlined absolute -right-10 -bottom-10 text-[20rem] text-primary/10 pointer-events-none"
+                className="material-symbols-outlined absolute -right-6 -bottom-6 md:-right-10 md:-bottom-10 text-[8rem] md:text-[20rem] text-primary/10 pointer-events-none"
                 style={{ fontVariationSettings: "'FILL' 1" }}
               >
                 eco
@@ -247,10 +232,11 @@ export default function Home() {
       {/* How it Works */}
       <section className="py-24 md:py-40 px-8 bg-surface">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-headline mb-12 text-on-surface">How it Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-1 px-4 md:px-0 rounded-xl overflow-hidden shadow-sm border border-outline-variant/10">
+          <h2 className="text-4xl md:text-6xl font-headline mb-12 text-on-surface reveal">How it Works</h2>
+          {/* No internal padding — backgrounds fill to container edges */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-1 rounded-xl overflow-hidden shadow-sm border border-outline-variant/10 reveal-scale">
             {/* Base Price */}
-            <div className="bg-surface-container p-12 md:p-16 text-left flex flex-col justify-between">
+            <div className="bg-surface-container p-10 md:p-16 text-left flex flex-col justify-between">
               <div>
                 <span className="inline-block border border-primary/20 px-3 py-1 mb-6 text-[10px] font-bold uppercase tracking-widest text-primary rounded-sm">
                   Foundation
@@ -270,7 +256,7 @@ export default function Home() {
               </div>
             </div>
             {/* Bespoke */}
-            <div className="bg-primary text-on-primary p-12 md:p-16 text-left flex flex-col justify-between">
+            <div className="bg-primary text-on-primary p-10 md:p-16 text-left flex flex-col justify-between">
               <div>
                 <span className="inline-block border border-on-primary/20 px-3 py-1 mb-6 text-[10px] font-bold uppercase tracking-widest rounded-sm">
                   The Add-Ons
@@ -304,21 +290,22 @@ export default function Home() {
 
       {/* Final CTA */}
       <section
-        className="relative py-48 md:py-64 bg-cover bg-center overflow-hidden flex items-center"
+        className="relative py-40 md:py-64 bg-cover bg-center overflow-hidden flex items-center"
         style={{ backgroundImage: `url('${ctaImg}')` }}
       >
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="max-w-7xl mx-auto px-8 relative z-10 w-full">
           <div className="flex flex-col items-center text-center">
-            <h2 className="text-5xl md:text-7xl font-headline mb-8 max-w-4xl italic text-white">
+            <h2 className="reveal text-5xl md:text-7xl font-headline mb-8 max-w-4xl italic text-white">
               Your 4,000 hectares are waiting.
             </h2>
-            <p className="text-xl max-w-2xl mb-12 text-white/90">
+            <p className="reveal text-xl max-w-2xl mb-12 text-white/90" style={{ transitionDelay: '100ms' }}>
               Disconnect from the noise. Reconnect with the rhythm of the African wild in total privacy.
             </p>
             <Link
               to="/inquiry"
-              className="group flex items-center gap-4 bg-primary text-on-primary px-12 py-6 text-lg font-headline rounded-xl transition-all hover:pr-14 active:scale-95 shadow-lg"
+              className="reveal group flex items-center gap-4 bg-primary text-on-primary px-12 py-6 text-lg font-headline rounded-xl transition-all hover:pr-14 active:scale-95 shadow-lg"
+              style={{ transitionDelay: '200ms' }}
             >
               Request Availability
               <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">
