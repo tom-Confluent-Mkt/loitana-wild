@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(npm run *)",
+      "Read(//c/Users/Tomas/.claude/projects/c--Users-Tomas-Desktop-Loitana-Wild/**)"
+    ]
+  }
+}

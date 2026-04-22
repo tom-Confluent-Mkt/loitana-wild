@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inquiry | LOITANA WILD</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#4A5D45",
+                "on-primary": "#ffffff",
+                "primary-container": "#CCD7C8",
+                "on-primary-container": "#141F11",
+                "secondary": "#7D6B51",
+                "on-secondary": "#ffffff",
+                "secondary-container": "#F5EFE6",
+                "on-secondary-container": "#292113",
+                "tertiary": "#8C715E",
+                "on-tertiary": "#ffffff",
+                "tertiary-container": "#FCEEE4",
+                "on-tertiary-container": "#2E1C11",
+                "background": "#FAFAF7",
+                "on-background": "#1A1C19",
+                "surface": "#FAFAF7",
+                "on-surface": "#1A1C19",
+                "surface-variant": "#E0E4DC",
+                "on-surface-variant": "#444841",
+                "outline": "#747970",
+                "outline-variant": "#C4C8BF",
+                "surface-container-lowest": "#FFFFFF",
+                "surface-container-low": "#F4F4F0",
+                "surface-container": "#EEEEEA",
+                "surface-container-high": "#E8E9E4",
+                "surface-container-highest": "#E2E3DE",
+                "primary-fixed": "#CCD7C8",
+                "on-primary-fixed": "#091407"
+              },
+              fontFamily: {
+                "headline": ["Newsreader", "serif"],
+                "body": ["Newsreader", "serif"],
+                "label": ["Manrope", "sans-serif"],
+                "newsreader": ["Newsreader", "serif"],
+                "manrope": ["Manrope", "sans-serif"]
+              },
+              borderRadius: {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "1rem",
+                "full": "9999px"
+              },
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-background/80 dark:bg-on-background/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold font-newsreader text-primary tracking-tighter">
+            LOITANA WILD
+        </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-outline font-medium hover:text-primary transition-colors duration-300" href="#">The House</a>
+<a class="text-outline font-medium hover:text-primary transition-colors duration-300" href="#">Expeditions</a>
+<a class="text-outline font-medium hover:text-primary transition-colors duration-300" href="#">Tailor Your Stay</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#">Inquiry</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-DEFAULT font-label font-bold tracking-tight scale-95 hover:scale-100 transition-all duration-200">
+            Book Your Escape
+        </button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section / Header -->
+<header class="relative w-full pt-20 pb-12 px-8 overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(rgba(250, 250, 247, 0.85), rgba(250, 250, 247, 0.85)), url('https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g');">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between gap-12">
+<div class="max-w-2xl">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-secondary mb-6 block">Begin the adventure</span>
+<h1 class="font-headline text-[clamp(3.5rem,8vw,5.5rem)] leading-[0.9] tracking-tighter text-primary">
+                    Start Your <br/>Kenyan Journey
+                </h1>
+</div>
+<div class="hidden md:block pb-4">
+<p class="font-newsreader italic text-xl text-outline max-w-xs">
+                    "The savannah speaks in whispers to those who listen."
+                </p>
+</div>
+</div>
+</header>
+<!-- Form Section -->
+<section class="px-8 pb-32">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Inquiry Form Shell -->
+<div class="lg:col-span-7 space-y-12">
+<!-- Testimonials Slider Above Form -->
+<div class="space-y-8">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-secondary mb-2 block">Testimonials</span>
+<h2 class="font-headline text-4xl text-primary tracking-tight">Voices of the Wild</h2>
+</div>
+<div class="relative group">
+<div class="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-8 pb-4">
+<!-- Review 1 -->
+<div class="snap-start flex-shrink-0 w-full md:w-[85%] border-l border-outline-variant/30 pl-8 py-2">
+<p class="font-newsreader italic text-2xl text-on-surface leading-snug">
+                                    "The silence here isn't empty; it's full of life. Waking up to the sunrise over the Mara was a spiritual experience we will never forget."
+                                </p>
+<div class="mt-6 flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+<div>
+<p class="font-label text-[10px] font-bold uppercase tracking-widest text-primary">Elena &amp; Marcus</p>
+<p class="font-newsreader text-xs italic text-outline">Stockholm, Sweden</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="snap-start flex-shrink-0 w-full md:w-[85%] border-l border-outline-variant/30 pl-8 py-2">
+<p class="font-newsreader italic text-2xl text-on-surface leading-snug">
+                                    "Our guide didn't just show us animals; he showed us the intricate dance of the ecosystem. Truly sustainable and deeply authentic."
+                                </p>
+<div class="mt-6 flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+<div>
+<p class="font-label text-[10px] font-bold uppercase tracking-widest text-primary">Julian Thorne</p>
+<p class="font-newsreader text-xs italic text-outline">London, UK</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="snap-start flex-shrink-0 w-full md:w-[85%] border-l border-outline-variant/30 pl-8 py-2">
+<p class="font-newsreader italic text-2xl text-on-surface leading-snug">
+                                    "Loitana Wild is where luxury meets the raw, unfiltered heart of Kenya. The organic dining under the stars was the highlight."
+                                </p>
+<div class="mt-6 flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary overflow-hidden">
+<span class="material-symbols-outlined text-sm">person</span>
+</div>
+<div>
+<p class="font-label text-[10px] font-bold uppercase tracking-widest text-primary">The Chen Family</p>
+<p class="font-newsreader text-xs italic text-outline">Singapore</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Form -->
+<div class="bg-surface-container-low p-8 md:p-16 rounded-xl relative">
+<form class="space-y-12">
+<!-- Personal Details Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-outline" for="name">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b focus:border-primary p-4 font-body text-on-surface-variant transition-all outline-none rounded-DEFAULT" id="name" placeholder="Enter your name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-outline" for="email">Email Address</label>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b focus:border-primary p-4 font-body text-on-surface-variant transition-all outline-none rounded-DEFAULT" id="email" placeholder="hello@adventure.com" type="email"/>
+</div>
+</div>
+<!-- Logistics Group -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-outline" for="dates">Preferred Dates</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b focus:border-primary p-4 font-body text-on-surface-variant transition-all outline-none rounded-DEFAULT" id="dates" placeholder="Select timeframe" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-outline pointer-events-none">calendar_today</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-outline" for="guests">Guest Count</label>
+<select class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b focus:border-primary p-4 font-body text-on-surface-variant transition-all outline-none appearance-none rounded-DEFAULT" id="guests">
+<option>1 Guest</option>
+<option selected="">2 Guests</option>
+<option>3 - 5 Guests</option>
+<option>6+ (Private Group)</option>
+</select>
+</div>
+</div>
+<!-- Custom Request -->
+<div class="space-y-2">
+<label class="font-label text-xs uppercase tracking-widest text-outline" for="wild-request">How do you want to wild?</label>
+<textarea class="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b focus:border-primary p-4 font-body text-on-surface-variant transition-all outline-none resize-none rounded-DEFAULT" id="wild-request" placeholder="Tell us about your dream additions: Hot air balloon sunrise, private guide, conservation workshop..." rows="5"></textarea>
+</div>
+<!-- Action -->
+<div class="pt-4 flex items-center gap-8">
+<button class="bg-primary text-on-primary px-12 py-5 rounded-DEFAULT font-label font-bold uppercase tracking-widest text-sm hover:bg-primary/90 transition-colors duration-300" type="submit">
+                                Send Inquiry
+                            </button>
+<span class="hidden md:block font-body text-sm text-outline-variant max-w-[200px] leading-snug">
+                                We aim to respond within 24 hours to begin your curation.
+                            </span>
+</div>
+</form>
+</div>
+</div>
+<!-- Info Column (Editorial Layout) -->
+<div class="lg:col-span-5 space-y-16">
+<!-- Image Card with Tonal Stacking -->
+<div class="relative group">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-high rounded-lg">
+<img alt="Scenic Kenyan river view" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-6 max-w-[240px] shadow-xl rounded-DEFAULT">
+<p class="font-headline text-2xl text-primary leading-tight">Private Expeditions</p>
+<p class="font-body text-sm text-outline mt-2">Every stay at Loitana is uniquely crafted for your curiosities.</p>
+</div>
+</div>
+<!-- Amenities Chips -->
+<div class="space-y-6 pt-8">
+<h3 class="font-label text-xs uppercase tracking-widest text-primary font-bold">Included Amenities</h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-full">Solar Powered</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-full">Private Guide</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-full">Organic Dining</span>
+<span class="bg-secondary-container text-on-secondary-container px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-full">Airstrip Transfer</span>
+</div>
+</div>
+<!-- Location Insight -->
+<div class="p-8 bg-surface-container-high border-l-4 border-primary rounded-DEFAULT">
+<h4 class="font-headline text-xl text-on-surface mb-2">Finding the Wild</h4>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Located on the border of the Maasai Mara, Loitana Wild offers exclusive access to the conservancy, far from the crowds. We provide private transfers from Nairobi or Ol Kiombo Airstrip.
+                    </p>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-4">
+<div class="aspect-square rounded-lg overflow-hidden">
+<img alt="Animal paw print in the sand" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujtXLVr4z8trnv0G46cb_BfD8TrLiaL9doVMnUX4_ZaRq1db-enTzJyTC6iTi-c9BfUZ0tnEbOAFu3S5EI1zn6DxMOU_JrQVoGRuV1CxukqJ2z-XKof-OkylQMHPwqt75EG7xR_q1hie8y9vMBMV-pc-oQcLItQIVuGEtdoU8QQhCtvqPXjKths90Z4J0sFbntlX8QA-p22La5-HSdVKito9FyKrov-VpMcTRt0HtJBXk-S9lCgldebbIJbbCVYgVcuow0QvosevA"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden">
+<img alt="People overlooking the valley" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uiAlP0owS4wkwdVF0vstokwJ-0Mq3gxpUm_X6ETWbgT-lsBWEZereUP561w1Mgizz6CVcuuhJTtZlat0UXyCCfqG_VUEtoz976RLCF3pX61m6ts986Tsn0QGRNeWxFu-KHPPIWJ27fw9wjRAmibXBXVoOkr-__-mBQRtXKv1359p2bo7u3ifeFQkkYUct7qo5d3--8S7gCfBhqUFVqBIUtXJW5nj-nL1CNd6lKN_957pyWPGCC7wk_dOM_GMqqqPYBvLuEsrmL6fA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floating Action - Back to Explorer -->
+<a class="fixed bottom-8 right-8 z-40 bg-surface-container-lowest/80 backdrop-blur-md p-4 rounded-full shadow-lg border border-outline-variant/20 group transition-all hover:pr-8" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold hidden group-hover:block whitespace-nowrap">View House Gallery</span>
+</div>
+</a>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-outline-variant/30 bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 w-full mx-auto max-w-7xl">
+<div class="font-label text-sm uppercase tracking-widest text-outline">
+            © 2024 Loitana Wild. The Breath of the Savannah.
+        </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Conservation</a>
+<a class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-label text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>

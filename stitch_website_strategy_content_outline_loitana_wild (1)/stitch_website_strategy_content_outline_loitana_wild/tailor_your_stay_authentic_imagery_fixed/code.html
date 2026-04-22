@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#101f0f",
+              "primary-fixed": "#cbedc3",
+              "surface-variant": "#e1e4dc",
+              "on-surface": "#1a1c19",
+              "on-secondary-fixed-variant": "#111f0f",
+              "on-primary-fixed": "#002202",
+              "surface-container-lowest": "#ffffff",
+              "surface-tint": "#4a5d45",
+              "on-error-container": "#410002",
+              "inverse-surface": "#2f312d",
+              "on-background": "#1a1c19",
+              "on-secondary-fixed": "#000000",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e1e4dc",
+              "on-tertiary-container": "#001e2e",
+              "surface": "#f9faf4",
+              "on-tertiary-fixed-variant": "#001e2e",
+              "background": "#f9faf4",
+              "surface-container-low": "#f3f4ee",
+              "on-surface-variant": "#444842",
+              "primary-container": "#304b30",
+              "outline-variant": "#c5c8c0",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#b5ccb0",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#d1e8cc",
+              "inverse-primary": "#b0d1a9",
+              "primary": "#4a5d45",
+              "tertiary-fixed": "#bee8ff",
+              "on-tertiary-fixed": "#000000",
+              "surface-container-high": "#e7e9e2",
+              "tertiary": "#00668a",
+              "primary-fixed-dim": "#b0d1a9",
+              "tertiary-container": "#c6e7ff",
+              "on-primary-container": "#cbedc3",
+              "tertiary-fixed-dim": "#8ecdff",
+              "secondary-container": "#3d503b",
+              "secondary": "#55624f",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#324d2e",
+              "surface-dim": "#dada00",
+              "surface-bright": "#f9faf4",
+              "surface-container": "#eded00",
+              "inverse-on-surface": "#f1f1eb",
+              "outline": "#757971"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(26, 28, 25, 0.04);
+        }
+        .card-expand-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, opacity 0.3s ease-in;
+            opacity: 0;
+        }
+        .group:hover .card-expand-content {
+            max-height: 400px;
+            opacity: 1;
+        }
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-primary">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1920px] mx-auto">
+<a class="text-2xl font-bold font-headline text-primary tracking-tighter" href="#">LOITANA WILD</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-on-surface-variant font-medium font-headline tracking-tight hover:text-primary transition-colors duration-300" href="#">The House</a>
+<a class="text-on-surface-variant font-medium font-headline tracking-tight hover:text-primary transition-colors duration-300" href="#">Expeditions</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-headline tracking-tight" href="#">Tailor Your Stay</a>
+<a class="text-on-surface-variant font-medium font-headline tracking-tight hover:text-primary transition-colors duration-300" href="#">Inquiry</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 font-headline font-bold rounded-lg scale-95 duration-200 ease-in-out hover:scale-100 transition-transform">
+                Book Your Escape
+            </button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<header class="relative w-full pt-20 pb-16 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="font-label uppercase tracking-widest text-primary font-bold text-sm mb-4 block">Personalized Luxury</span>
+<h1 class="font-headline text-6xl md:text-8xl tracking-tight leading-[0.9] mb-8">
+                        Adventures <br/><span class="italic text-on-surface-variant">on Your Terms</span>
+</h1>
+</div>
+<div class="md:col-span-4 pb-2">
+<p class="text-on-surface-variant text-lg leading-relaxed border-l-2 border-outline-variant pl-6">
+                        We believe in the luxury of choice. Our base rates provide the canvas of your stay—affordable, serene, and deeply comfortable. From there, you paint your own journey with our curated bespoke upgrades.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Feature Image Bleed -->
+<section class="w-full mb-32">
+<div class="h-[614px] w-full bg-surface-container-low overflow-hidden">
+<img alt="Scenic view of a rocky riverbed winding through the Loitana hills" class="w-full h-full object-cover grayscale-[0.2]" src="https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g"/>
+</div>
+</section>
+<!-- The Bespoke Menu Section (Interactive Gallery) -->
+<section class="max-w-7xl mx-auto px-8 pb-32">
+<div class="relative mb-20">
+<div class="absolute -top-10 -left-6 text-[8rem] font-headline text-primary/5 select-none leading-none z-0">Menu</div>
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-end gap-4">
+<div class="max-w-xl">
+<h2 class="font-headline text-5xl tracking-tight mb-2">The Bespoke Catalog</h2>
+<p class="text-on-surface-variant font-headline italic text-xl">Curated experiences to deepen your connection with the wild.</p>
+</div>
+<div class="flex gap-4 pb-2">
+<button class="px-4 py-2 border border-outline-variant text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">All</button>
+<button class="px-4 py-2 border border-outline-variant text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Culinary</button>
+<button class="px-4 py-2 border border-outline-variant text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Exploration</button>
+<button class="px-4 py-2 border border-outline-variant text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors">Community</button>
+</div>
+</div>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+<!-- Private Chef (Culinary) -->
+<div class="gallery-item group relative bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/30 transition-all duration-500 hover:shadow-2xl">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Cozy stone and thatch interior setting" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Culinary Excellence</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="restaurant">restaurant</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:italic transition-all">Private Chef &amp; Custom Catering</h3>
+<div class="card-expand-content">
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                A dedicated culinary artisan at your disposal. Includes bespoke menus, dietary tailoring, and all meal service from sunrise bush breakfasts to 5-course dinners.
+                            </p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/30">
+<span class="font-bold text-primary">$150 <span class="text-[10px] text-outline uppercase">Daily Supplement</span></span>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:underline">
+                                    Add to Stay <span class="material-symbols-outlined text-sm">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Guided Wild Expeditions (Exploration) -->
+<div class="gallery-item group relative bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant/30 transition-all duration-500 hover:shadow-2xl">
+<div class="aspect-square overflow-hidden">
+<img alt="A trekker walking through the golden tall grass of the savannah" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uigqxrCtSp2lUg0YvAYH6_V_Ei8kfLkyhRwqKffOjnG1EoN0kwyREbp10qTML7inZrYZ2UXwEFGMGRAtx_A8llJ5u5aWyL0CqInl-mM0rwHWeL-20cHzPLk_p7xyZxg8N1gGpe4Elrlmjbdn4FO7M3ksxt2lq5rcu8MPWPcVmfJczzPXGCXbzyQrNDsWULNwdq7MGtU_gTfrh-IVsQPhw7fmlmLICB2IfS8cMor4KvD9OLij8q92PNY45UIAk3W8eqGKP9F5Mc6MQ"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Exploration</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="hiking">hiking</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:italic transition-all">Bespoke Walking Safaris</h3>
+<div class="card-expand-content">
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                Venture where vehicles cannot. Track the silent movements of the wild on foot with our expert naturalists. Focus on botany, tracking, and micro-ecosystems.
+                            </p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/30">
+<span class="font-bold text-primary">$120 <span class="text-[10px] text-outline uppercase">Per Person</span></span>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:underline">
+                                    Add to Stay <span class="material-symbols-outlined text-sm">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Night Tracking (Exploration) -->
+<div class="gallery-item group relative bg-primary text-on-primary rounded-lg overflow-hidden transition-all duration-500 hover:shadow-2xl">
+<div class="aspect-square overflow-hidden">
+<img alt="Close up of a predator's paw print in the dry sand" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0ujtXLVr4z8trnv0G46cb_BfD8TrLiaL9doVMnUX4_ZaRq1db-enTzJyTC6iTi-c9BfUZ0tnEbOAFu3S5EI1zn6DxMOU_JrQVoGRuV1CxukqJ2z-XKof-OkylQMHPwqt75EG7xR_q1hie8y9vMBMV-pc-oQcLItQIVuGEtdoU8QQhCtvqPXjKths90Z4J0sFbntlX8QA-p22La5-HSdVKito9FyKrov-VpMcTRt0HtJBXk-S9lCgldebbIJbbCVYgVcuow0QvosevA"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-on-primary/60">Nocturnal Exploration</span>
+<span class="material-symbols-outlined text-on-primary/40" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:italic transition-all">Predator Tracking &amp; Night Drives</h3>
+<div class="card-expand-content">
+<p class="text-on-primary/80 text-sm mb-6 leading-relaxed">
+                                Witness the savannah come alive after dark. Using infrared technology and expert tracking, observe the elusive nocturnal predators of the conservancy.
+                            </p>
+<div class="flex justify-between items-center pt-4 border-t border-on-primary/20">
+<span class="font-bold text-on-primary">$180 <span class="text-[10px] text-on-primary/60 uppercase">Per Vehicle</span></span>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-on-primary hover:underline">
+                                    Add to Stay <span class="material-symbols-outlined text-sm">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Cultural Visits (Community) -->
+<div class="gallery-item group relative bg-surface-container-high rounded-lg overflow-hidden border border-outline-variant/30 transition-all duration-500 hover:shadow-2xl">
+<div class="aspect-[3/4] overflow-hidden">
+<img alt="Maasai guide and guests interacting on a rocky outcrop overlooking the valley" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uiAlP0owS4wkwdVF0vstokwJ-0Mq3gxpUm_X6ETWbgT-lsBWEZereUP561w1Mgizz6CVcuuhJTtZlat0UXyCCfqG_VUEtoz976RLCF3pX61m6ts986Tsn0QGRNeWxFu-KHPPIWJ27fw9wjRAmibXBXVoOkr-__-mBQRtXKv1359p2bo7u3ifeFQkkYUct7qo5d3--8S7gCfBhqUFVqBIUtXJW5nj-nL1CNd6lKN_957pyWPGCC7wk_dOM_GMqqqPYBvLuEsrmL6fA"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Community</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:italic transition-all">Maasai Cultural Immersion</h3>
+<div class="card-expand-content">
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                Meaningful engagement with the local community. Learn traditional crafts, oral histories, and pastoral traditions. 50% of fees go directly to the village fund.
+                            </p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/30">
+<span class="font-bold text-primary">$60 <span class="text-[10px] text-outline uppercase">Donation Basis</span></span>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:underline">
+                                    Add to Stay <span class="material-symbols-outlined text-sm">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sunset Peak (Wellness/Relaxation) -->
+<div class="gallery-item group relative bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/30 transition-all duration-500 hover:shadow-2xl">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Wide view of the riverbed at sunset with silhouetted trees" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Wellness</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="sunny">sunny</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:italic transition-all">Sunset Peak Meditation</h3>
+<div class="card-expand-content">
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                A guided silence atop the Loitana ridge. Witness the 360-degree horizon as the sun sets, accompanied by light refreshments and the sounds of the cooling bush.
+                            </p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/30">
+<span class="font-bold text-primary">$45 <span class="text-[10px] text-outline uppercase">Per Guest</span></span>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:underline">
+                                    Add to Stay <span class="material-symbols-outlined text-sm">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- River Breakfast (Culinary) - Moved or adjusted for masonry flow if needed -->
+<div class="gallery-item group relative bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/30 transition-all duration-500 hover:shadow-2xl">
+<div class="aspect-[16/9] overflow-hidden">
+<img alt="Morning river view" class="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uiT68b6cAQnfFIJENucNpp6sJGouOmdfinP6qTjiQ_lHEF2Rb_TYrsSUyRN2LlnNbW4bUngYHTJ1aF6HA4U2RxdaQMe2fjqie65LEra1Ni_i1fqyG6vR76ytF4i28exouvuv20SC5PX0X_Km9gSaMYZQfLLMgJ2bQYa7HGuHJlcs3W6iW8DzYv9mpQJdFCLjUVY-MiuUl2wfpZXRLIy7V8gwXGHJ1Vxo0aRu1rqD27PieMYLHA0KRHimwZ9XLmxxcgaZJcewAVU"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Culinary</span>
+<span class="material-symbols-outlined text-outline-variant" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="font-headline text-3xl mb-4 group-hover:italic transition-all">Dawn River Breakfast</h3>
+<div class="card-expand-content">
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                                A fully catered breakfast setup on the sandy banks of the Loitana river. Fresh juices, campfire coffee, and hot dishes prepared on site as the sun rises.
+                            </p>
+<div class="flex justify-between items-center pt-4 border-t border-outline-variant/30">
+<span class="font-bold text-primary">$85 <span class="text-[10px] text-outline uppercase">Per Guest</span></span>
+<button class="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:underline">
+                                    Add to Stay <span class="material-symbols-outlined text-sm">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bespoke Philosophy Section -->
+<section class="bg-surface-container-low py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 text-[12rem] font-headline text-primary/5 select-none leading-none">Stay</div>
+<h2 class="font-headline text-5xl mb-8 relative z-10">Bespoke means <br/><span class="italic">without compromise.</span></h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        The Loitana Wild experience is built on a "Base + Tailor" model. We believe you shouldn't pay for what you don't use. Your base rate covers your exquisite lodging, basic amenities, and the profound silence of the bush. Everything else is an invitation to go deeper, customized precisely to your desires.
+                    </p>
+<div class="flex flex-col space-y-4">
+<div class="flex items-center gap-4">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label uppercase tracking-widest text-xs">Solar Powered Infrastructure</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label uppercase tracking-widest text-xs">Zero Plastic Waste Policy</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="w-8 h-[1px] bg-primary"></span>
+<span class="font-label uppercase tracking-widest text-xs">Direct Community Benefit</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] bg-surface-variant mt-12 rounded-lg overflow-hidden shadow-xl">
+<img alt="Interior view" class="w-full h-full object-cover grayscale-[0.2]" src="https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ"/>
+</div>
+<div class="aspect-[3/4] bg-surface-variant rounded-lg overflow-hidden shadow-xl">
+<img alt="View from terrace" class="w-full h-full object-cover grayscale-[0.2]" src="https://lh3.googleusercontent.com/aida/ADBb0ugaFtsByZ8vnRqrh4tNx1A81F4pycbW04NCCylKVf5bNjD2IWJKEfAzabUPQv_LRyH7Lhbf7s4CMwH6fEG6S1jelyyT1zskiX8Y94QQ1fp8A-FIP72HxQWsTfnIMxNwyj1seRlnTHsxMOogjgwdT4RSqqzhuWhfavHx655iflUo7DPtte2kQ4rQmRy9VtTKQYghFlU2oPx_-cRUHKIf4dysLwKL3Hdr56cFx3I1BTkIW_m8FsGJc6cNU5oljsoxqYjkATe7OEt85w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 text-center max-w-3xl mx-auto px-8">
+<h2 class="font-headline text-5xl mb-6">Ready to craft your journey?</h2>
+<p class="text-on-surface-variant mb-12 text-lg">
+                Connect with our concierge team to build a custom itinerary that reflects your rhythm and curiosity.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 font-headline text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-shadow">Start Your Plan</button>
+<button class="border border-primary text-primary px-10 py-4 font-headline text-xl font-bold rounded-lg hover:bg-primary/5 transition-colors">Download Rate Sheet</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 border-t border-outline-variant bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 w-full mx-auto max-w-7xl">
+<div class="flex flex-col items-center md:items-start space-y-4">
+<p class="font-body text-sm uppercase tracking-widest text-outline">© 2024 Loitana Wild. The Breath of the Savannah.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-body text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Conservation</a>
+<a class="font-body text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Contact Us</a>
+<a class="font-body text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>

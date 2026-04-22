@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#4e463d",
+              "primary-fixed": "#cbd3c0",
+              "surface-variant": "#e1e4dc",
+              "on-surface": "#1a1c19",
+              "on-secondary-fixed-variant": "#4e463d",
+              "on-primary-fixed": "#072107",
+              "surface-container-lowest": "#ffffff",
+              "surface-tint": "#4a5d45",
+              "on-error-container": "#410002",
+              "inverse-surface": "#2f312d",
+              "on-background": "#1a1c19",
+              "on-secondary-fixed": "#1d1b16",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e1e4dc",
+              "on-tertiary-container": "#00201a",
+              "surface": "#f9faf4",
+              "on-tertiary-fixed-variant": "#1d4e46",
+              "background": "#f9faf4",
+              "surface-container-low": "#f3f4ee",
+              "on-surface-variant": "#434940",
+              "primary-container": "#cbd3c0",
+              "outline-variant": "#c2c8bd",
+              "on-error": "#ffffff",
+              "error": "#ba1a1a",
+              "secondary-fixed-dim": "#cbc7be",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#e7e3d9",
+              "inverse-primary": "#b0ccaa",
+              "primary": "#4a5d45",
+              "tertiary-fixed": "#bdeae0",
+              "on-tertiary-fixed": "#00201a",
+              "surface-container-high": "#e7e9e2",
+              "tertiary": "#39655e",
+              "primary-fixed-dim": "#b0ccaa",
+              "tertiary-container": "#bdeae0",
+              "on-primary-container": "#072107",
+              "tertiary-fixed-dim": "#a2cec5",
+              "secondary-container": "#e7e3d9",
+              "secondary": "#5e5f58",
+              "error-container": "#ffdad6",
+              "on-primary-fixed-variant": "#344a30",
+              "surface-dim": "#d9dbd4",
+              "surface-bright": "#f9faf4",
+              "surface-container": "#edebe4",
+              "inverse-on-surface": "#f1f1eb",
+              "outline": "#73796e"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Newsreader", "serif"],
+              "label": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(26, 28, 25, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-[#f9faf4]/90 backdrop-blur-xl border-b border-outline-variant/30">
+<nav class="flex justify-between items-center px-8 py-5 max-w-[1920px] mx-auto">
+<div class="text-2xl font-bold font-headline text-primary tracking-tighter">
+            LOITANA WILD
+        </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-on-surface font-semibold border-b border-primary pb-0.5 transition-colors duration-300 font-headline text-lg" href="#">The House</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-headline text-lg" href="#">Expeditions</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-headline text-lg" href="#">Tailor Your Stay</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300 font-headline text-lg" href="#">Inquiry</a>
+</div>
+<button class="bg-primary text-on-primary px-7 py-2.5 rounded-xl font-label font-bold uppercase tracking-widest text-[10px] hover:bg-primary/90 transition-all">
+            Book Your Escape
+        </button>
+</nav>
+</header>
+<main>
+<!-- Hero Section (Split Editorial Layout) -->
+<section class="relative min-h-[90vh] bg-background flex items-center overflow-hidden pt-12">
+<div class="max-w-[1720px] mx-auto w-full px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Typography & Info -->
+<div class="md:col-span-6 lg:col-span-5 relative z-10 py-12">
+<div class="flex flex-col">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary mb-8 block font-bold">The Residence</span>
+<h1 class="font-headline text-7xl md:text-8xl lg:text-[9rem] leading-[0.85] tracking-tighter text-on-surface mb-10">
+                        The House <br/> <span class="italic">on the</span> Rock
+                    </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-lg leading-relaxed italic mb-12">
+                        An architectural marvel sculpted into the ancient granite of the Lolokwe escarpment, offering absolute seclusion in the heart of Northern Kenya.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
+<div class="flex flex-col">
+<span class="font-headline text-5xl font-bold text-primary mb-1">4,000</span>
+<span class="font-label uppercase text-[9px] tracking-[0.2em] font-bold text-on-surface-variant">Hectares of Wilderness</span>
+</div>
+<div class="h-10 w-px bg-outline-variant hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-headline text-3xl italic text-on-surface mb-1">Exclusive Tenure</span>
+<span class="font-label uppercase text-[9px] tracking-[0.2em] font-bold text-on-surface-variant">The Entire Estate is Yours</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Featured Image with Magazine Styling -->
+<div class="md:col-span-6 lg:col-span-7 relative">
+<div class="relative aspect-[4/5] md:aspect-square lg:aspect-[4/3] w-full overflow-hidden rounded-xl editorial-shadow">
+<img alt="The authentic House on the Rock exterior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujrRQkF7Y9McKI7aTr6lsKw4N_CrooM5IxqsIs03krLzI1u0yGVkn_EJG8A13xRaolwIHXssJNqwbAU_3-MGBz1vOfuB3mwL2_8XDomfeN0EwJ71UjPX-SHEaCfeYD8xBmVkCN4TpighIsFE5PDbPOlEVBmly4Rxc7VtFQW05nTdmbocv0diQdkEixdSfVloWvr1dLY0QtqyjkcuH3x9zvJirBhHt6qTSd0g4HWxwdo-L8uEFF5whsY1fxYz5WEfgb-dn8bfhhTnQ"/>
+<!-- Subtle accent badge overlapping image -->
+<div class="absolute bottom-12 -left-6 bg-surface p-10 hidden lg:block rounded-xl editorial-shadow border border-outline-variant/10">
+<p class="font-headline text-xl italic text-primary leading-tight">"A sanctuary where the architecture <br/> bows to the landscape."</p>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Gallery Grid (Asymmetric Bento Style) -->
+<section class="py-32 px-8 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[1200px]">
+<div class="md:col-span-8 overflow-hidden rounded-xl">
+<img alt="Stone facade and terrace of the House on the Rock" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ"/>
+</div>
+<div class="md:col-span-4 grid grid-rows-2 gap-8">
+<div class="overflow-hidden rounded-xl">
+<img alt="Cottage details" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0ujFlqVecv-glzOx3yi7O2VHtEttnKUn837vjofaF8Y0pehh2C_yUNJ9eZr50smkcLW3vui3SVLctw78K8EPvaoUeLTFWGG-2EmOrJU4COXN6zRNr7JXAhWjhacPAYY9Uo3yXxbhMYS1rtuTLp_Kh8nLTNAnWvaAqsRCH7K36zPErZNbx_OrzojZm8bkzNDZxrtwOG6XekcVqQVQTvSU6V0QD2QtDeDaxJMYsdu9p94TSKJiJiuc5MT-oaSthKA3yoReV94OLt5PdQ"/>
+</div>
+<div class="bg-surface-container-low p-12 flex flex-col justify-center rounded-xl">
+<h3 class="font-headline text-4xl mb-6 italic">Uninterrupted Horizon</h3>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">Every room is designed to vanish into the landscape, with floor-to-ceiling glass that frames the migration paths below.</p>
+</div>
+</div>
+<div class="md:col-span-4 overflow-hidden rounded-xl">
+<img alt="Detail shot of the house environment" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uhrVEufMdFgxJ6OXrNjuYxiPx5WLwMNfxCorS5a03uHqexeFVOune9lZw8hjk2wxFuyh2NrWXrLJnkjQSJmMuMBZOs3NABJnFVXgtkthOGaxQvKqEoH9s5NPZz6MG72pft19qPrzpqX53d6u25vyI_-5kjnkp-z5F6G8tWBpbHjbqWny6utsSxsWSWmKAm1adyOn0GQrXQ4LBQFbIgEhCedBgXKdsgjc0TwLD2j9tiJgXYNuRH9yNWYc5K2nu5FUSzydlmqFa0D6g"/>
+</div>
+<div class="md:col-span-8 overflow-hidden rounded-xl">
+<img alt="Wide view of the house on the rock" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0ujrRQkF7Y9McKI7aTr6lsKw4N_CrooM5IxqsIs03krLzI1u0yGVkn_EJG8A13xRaolwIHXssJNqwbAU_3-MGBz1vOfuB3mwL2_8XDomfeN0EwJ71UjPX-SHEaCfeYD8xBmVkCN4TpighIsFE5PDbPOlEVBmly4Rxc7VtFQW05nTdmbocv0diQdkEixdSfVloWvr1dLY0QtqyjkcuH3x9zvJirBhHt6qTSd0g4HWxwdo-L8uEFF5whsY1fxYz5WEfgb-dn8bfhhTnQ"/>
+</div>
+</div>
+</section>
+<!-- Total Privacy Section -->
+<section class="bg-surface-container-low py-40 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
+<div class="md:w-1/2 order-2 md:order-1">
+<div class="relative editorial-shadow overflow-hidden rounded-xl">
+<img alt="Wide river view of the conservancy" class="w-full aspect-[4/5] object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g"/>
+<div class="absolute bottom-8 left-8 bg-surface/95 backdrop-blur-md p-8 max-w-xs border border-outline-variant/20 rounded-xl">
+<span class="font-headline text-5xl block font-bold text-primary mb-2">4,000</span>
+<span class="font-label uppercase text-[10px] tracking-[0.3em] font-bold">Hectares of Wilderness</span>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 order-1 md:order-2">
+<h2 class="font-headline text-6xl md:text-7xl mb-10 leading-[0.95] tracking-tighter">Total Privacy. <br/> No Compromise.</h2>
+<p class="font-body text-xl text-on-surface-variant mb-12 leading-relaxed italic">
+                    Loitana Wild is not a hotel; it is your private estate. When you book the House on the Rock, you are the only guests on the entire 4,000-hectare conservancy.
+                </p>
+<div class="space-y-10">
+<div class="flex gap-8 items-start">
+<div class="bg-primary/10 text-primary w-14 h-14 flex items-center justify-center shrink-0 rounded-xl">
+<span class="material-symbols-outlined text-3xl">security</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl mb-2 font-semibold">Exclusive Tenure</h4>
+<p class="text-base text-on-surface-variant leading-relaxed">Your stay includes the entire staff, a private guide, and a dedicated chef solely for your party.</p>
+</div>
+</div>
+<div class="flex gap-8 items-start">
+<div class="bg-primary/10 text-primary w-14 h-14 flex items-center justify-center shrink-0 rounded-xl">
+<span class="material-symbols-outlined text-3xl">solar_power</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl mb-2 font-semibold">Off-Grid Intelligence</h4>
+<p class="text-base text-on-surface-variant leading-relaxed">Experience 100% solar-powered luxury. Authentic comfort that leaves zero footprint on the land.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Included In Your Stay -->
+<section class="py-40 px-8 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="mb-24 text-center">
+<h2 class="font-headline text-6xl mb-6 tracking-tighter italic">Included in Your Stay</h2>
+<div class="h-0.5 w-32 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Feature 1 -->
+<div class="p-12 border border-outline-variant/30 hover:border-primary/40 transition-all group bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-5xl text-primary/30 group-hover:text-primary transition-colors mb-10 block">restaurant</span>
+<h3 class="font-headline text-3xl mb-5 italic">Bespoke Gastronomy</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Full board includes all meals tailored to your preference, from bush breakfasts to candlelit terrace dinners.</p>
+<ul class="text-[11px] space-y-3 font-label uppercase tracking-[0.2em] text-primary font-bold">
+<li>• Private Chef</li>
+<li>• Fine Wines &amp; Spirits</li>
+<li>• Organic Produce</li>
+</ul>
+</div>
+<!-- Feature 2 -->
+<div class="p-12 border border-outline-variant/30 hover:border-primary/40 transition-all group bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-5xl text-primary/30 group-hover:text-primary transition-colors mb-10 block">park</span>
+<h3 class="font-headline text-3xl mb-5 italic">Private Expeditions</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Unlimited game drives and guided bush walks on your own schedule. No fixed times, no other tourists.</p>
+<ul class="text-[11px] space-y-3 font-label uppercase tracking-[0.2em] text-primary font-bold">
+<li>• Custom 4x4 Vehicle</li>
+<li>• Master Tracker</li>
+<li>• Night Safaris</li>
+</ul>
+</div>
+<!-- Feature 3 -->
+<div class="p-12 border border-outline-variant/30 hover:border-primary/40 transition-all group bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-5xl text-primary/30 group-hover:text-primary transition-colors mb-10 block">spa</span>
+<h3 class="font-headline text-3xl mb-5 italic">Wild Wellness</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Full access to the infinity pool, gym facilities, and daily laundry service for a seamless retreat.</p>
+<ul class="text-[11px] space-y-3 font-label uppercase tracking-[0.2em] text-primary font-bold">
+<li>• Infinity Pool</li>
+<li>• Outdoor Showers</li>
+<li>• Butler Service</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative py-48 px-8 flex justify-center text-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Sunset trekking in the savannah" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0uigqxrCtSp2lUg0YvAYH6_V_Ei8kfLkyhRwqKffOjnG1EoN0kwyREbp10qTML7inZrYZ2UXwEFGMGRAtx_A8llJ5u5aWyL0CqInl-mM0rwHWeL-20cHzPLk_p7xyZxg8N1gGpe4Elrlmjbdn4FO7M3ksxt2lq5rcu8MPWPcVmfJczzPXGCXbzyQrNDsWULNwdq7MGtU_gTfrh-IVsQPhw7fmlmLICB2IfS8cMor4KvD9OLij8q92PNY45UIAk3W8eqGKP9F5Mc6MQ"/>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h2 class="font-headline text-7xl md:text-8xl text-white mb-10 leading-[0.9] tracking-tighter">Secure Your Sanctuary</h2>
+<p class="font-body text-2xl text-white/90 mb-14 italic">Experience the true soul of Kenya in absolute solitude. Limited bookings available per season.</p>
+<div class="flex flex-col sm:flex-row gap-8 justify-center">
+<button class="bg-white text-primary px-12 py-5 rounded-xl font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-primary-fixed transition-colors shadow-xl">
+                    Check Availability
+                </button>
+<button class="border border-white/40 backdrop-blur-md text-white px-12 py-5 rounded-xl font-label font-bold uppercase tracking-[0.3em] text-[11px] hover:bg-white/10 transition-colors">
+                    View Floorplans
+                </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-8 border-t border-outline-variant/30 bg-surface-container">
+<div class="flex flex-col md:flex-row justify-between items-center gap-10 w-full mx-auto max-w-7xl">
+<div class="font-label text-[11px] uppercase tracking-[0.2em] text-on-surface-variant font-bold">
+            © 2024 Loitana Wild. The Breath of the Savannah.
+        </div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-headline text-lg text-on-surface-variant hover:text-primary transition-all italic border-b border-transparent hover:border-primary" href="#">Conservation</a>
+<a class="font-headline text-lg text-on-surface-variant hover:text-primary transition-all italic border-b border-transparent hover:border-primary" href="#">Privacy Policy</a>
+<a class="font-headline text-lg text-on-surface-variant hover:text-primary transition-all italic border-b border-transparent hover:border-primary" href="#">Contact Us</a>
+<a class="font-headline text-lg text-on-surface-variant hover:text-primary transition-all italic border-b border-transparent hover:border-primary" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>
