@@ -1,64 +1,61 @@
 import { Link } from 'react-router-dom'
 
-const heroImg =
-  'https://lh3.googleusercontent.com/aida/ADBb0uguzLLTsFHpByAyShaSunZNflJ1ia_9wk8AhtiwiwEvfGUz5eo33kxULnf4zABvwKyZWnyAD7873W6pMX0T2VVEn2dMdS656oEqth3Qg4ylKxb12RbFtSiULo6sJ7-8E_xNTNdKtMkJynZ3rExg1begvRyFvW1oeZG1Sa-WhQQOJwrprqynfpHrOU154vbyh_9M2CXgVd2U1ShmSuz0Pxq3TBwaw7UbMWjvfNT7DL0FVrp-fzZCTrDJaTNtAdt1n1-AUDhYoNav_g'
-const sanctuaryImg =
-  'https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ'
-const ctaImg =
-  'https://lh3.googleusercontent.com/aida/ADBb0uiAlP0owS4wkwdVF0vstokwJ-0Mq3gxpUm_X6ETWbgT-lsBWEZereUP561w1Mgizz6CVcuuhJTtZlat0UXyCCfqG_VUEtoz976RLCF3pX61m6ts986Tsn0QGRNeWxFu-KHPPIWJ27fw9wjRAmibXBXVoOkr-__-mBQRtXKv1359p2bo7u3ifeFQkkYUct7qo5d3--8S7gCfBhqUFVqBIUtXJW5nj-nL1CNd6lKN_957pyWPGCC7wk_dOM_GMqqqPYBvLuEsrmL6fA'
+const heroImg = '/images/1%20(1).jpeg'
+const sanctuaryImg = '/images/1%20(3).jpeg'
+const ctaImg = '/images/1%20(7).jpeg'
 
 const episodes = [
   {
     id: '01',
     title: 'Twilight Migration',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0ujrRQkF7Y9McKI7aTr6lsKw4N_CrooM5IxqsIs03krLzI1u0yGVkn_EJG8A13xRaolwIHXssJNqwbAU_3-MGBz1vOfuB3mwL2_8XDomfeN0EwJ71UjPX-SHEaCfeYD8xBmVkCN4TpighIsFE5PDbPOlEVBmly4Rxc7VtFQW05nTdmbocv0diQdkEixdSfVloWvr1dLY0QtqyjkcuH3x9zvJirBhHt6qTSd0g4HWxwdo-L8uEFF5whsY1fxYz5WEfgb-dn8bfhhTnQ',
-    alt: 'The cottage nestled in nature',
+    img: '/images/1%20(2).jpeg',
+    alt: 'The cottage nestled in nature at golden hour',
   },
   {
     id: '02',
     title: 'Cultural Roots',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uhrVEufMdFgxJ6OXrNjuYxiPx5WLwMNfxCorS5a03uHqexeFVOune9lZw8hjk2wxFuyh2NrWXrLJnkjQSJmMuMBZOs3NABJnFVXgtkthOGaxQvKqEoH9s5NPZz6MG72pft19qPrzpqX53d6u25vyI_-5kjnkp-z5F6G8tWBpbHjbqWny6utsSxsWSWmKAm1adyOn0GQrXQ4LBQFbIgEhCedBgXKdsgjc0TwLD2j9tiJgXYNuRH9yNWYc5K2nu5FUSzydlmqFa0D6g',
-    alt: 'View of the house exterior',
+    img: '/images/1%20(8).jpeg',
+    alt: 'Maasai guide with guests on a rocky outcrop',
   },
   {
     id: '03',
     title: 'Predator Hour',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0ujFlqVecv-glzOx3yi7O2VHtEttnKUn837vjofaF8Y0pehh2C_yUNJ9eZr50smkcLW3vui3SVLctw78K8EPvaoUeLTFWGG-2EmOrJU4COXN6zRNr7JXAhWjhacPAYY9Uo3yXxbhMYS1rtuTLp_Kh8nLTNAnWvaAqsRCH7K36zPErZNbx_OrzojZm8bkzNDZxrtwOG6XekcVqQVQTvSU6V0QD2QtDeDaxJMYsdu9p94TSKJiJiuc5MT-oaSthKA3yoReV94OLt5PdQ',
-    alt: 'Cottage at golden hour',
+    img: '/images/1%20(14).jpeg',
+    alt: 'Animal paw print in the mud',
   },
   {
     id: '04',
     title: 'Nocturnal Silence',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g',
-    alt: 'The river valley vista',
+    img: '/images/1%20(9).jpeg',
+    alt: 'Dramatic rock formation at dusk',
   },
   {
     id: '05',
     title: 'The First Light',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0ujtXLVr4z8trnv0G46cb_BfD8TrLiaL9doVMnUX4_ZaRq1db-enTzJyTC6iTi-c9BfUZ0tnEbOAFu3S5EI1zn6DxMOU_JrQVoGRuV1CxukqJ2z-XKof-OkylQMHPwqt75EG7xR_q1hie8y9vMBMV-pc-oQcLItQIVuGEtdoU8QQhCtvqPXjKths90Z4J0sFbntlX8QA-p22La5-HSdVKito9FyKrov-VpMcTRt0HtJBXk-S9lCgldebbIJbbCVYgVcuow0QvosevA',
-    alt: 'Wild animal tracks',
+    img: '/images/1%20(11).jpeg',
+    alt: 'Walking through golden grass at dawn',
   },
 ]
 
 const bentoItems = [
   {
     colSpan: 'md:col-span-8',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uhrVEufMdFgxJ6OXrNjuYxiPx5WLwMNfxCorS5a03uHqexeFVOune9lZw8hjk2wxFuyh2NrWXrLJnkjQSJmMuMBZOs3NABJnFVXgtkthOGaxQvKqEoH9s5NPZz6MG72pft19qPrzpqX53d6u25vyI_-5kjnkp-z5F6G8tWBpbHjbqWny6utsSxsWSWmKAm1adyOn0GQrXQ4LBQFbIgEhCedBgXKdsgjc0TwLD2j9tiJgXYNuRH9yNWYc5K2nu5FUSzydlmqFa0D6g',
-    alt: 'Expeditions across the land',
+    img: '/images/1%20(13).jpeg',
+    alt: 'Valley landscape from the ridge',
     title: 'Expeditions',
     desc: 'Private tracking, night drives, and helicopter surveys over the Rift.',
   },
   {
     colSpan: 'md:col-span-4',
-    img: sanctuaryImg,
-    alt: 'The stone house architecture',
+    img: '/images/1%20(4).jpeg',
+    alt: 'The stone house on the rock',
     title: 'The House',
     desc: 'Architectural mastery blending stone, canvas, and cedar.',
   },
   {
     colSpan: 'md:col-span-4',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0ujtXLVr4z8trnv0G46cb_BfD8TrLiaL9doVMnUX4_ZaRq1db-enTzJyTC6iTi-c9BfUZ0tnEbOAFu3S5EI1zn6DxMOU_JrQVoGRuV1CxukqJ2z-XKof-OkylQMHPwqt75EG7xR_q1hie8y9vMBMV-pc-oQcLItQIVuGEtdoU8QQhCtvqPXjKths90Z4J0sFbntlX8QA-p22La5-HSdVKito9FyKrov-VpMcTRt0HtJBXk-S9lCgldebbIJbbCVYgVcuow0QvosevA',
-    alt: 'Deep roots in the community',
+    img: '/images/1%20(10).jpeg',
+    alt: 'Ancient cultural stone artifact',
     title: 'Community',
     desc: 'Roots that run deep within the Loitana conservation fabric.',
   },
@@ -104,11 +101,11 @@ export default function Home() {
       <section className="py-24 md:py-40 px-8 bg-surface">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-center">
           <div className="w-full md:w-1/2">
-            <div className="relative">
+            <div className="relative -mx-8 md:mx-0">
               <img
                 src={sanctuaryImg}
                 alt="Traditional stone cottage architecture"
-                className="w-full aspect-[4/5] object-cover shadow-2xl rounded-xl"
+                className="w-full aspect-[4/5] object-cover shadow-2xl md:rounded-xl"
               />
               <div className="absolute -bottom-10 -right-10 hidden lg:block bg-surface-container-low p-8 max-w-xs shadow-xl rounded-xl border border-outline-variant/10">
                 <p className="font-headline text-2xl italic text-primary">
@@ -154,11 +151,11 @@ export default function Home() {
               captured in the heart of the savannah.
             </p>
           </div>
-          <div className="flex gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory">
+          <div className="flex gap-4 md:gap-6 overflow-x-auto pb-8 hide-scrollbar snap-x snap-mandatory -mx-8 md:mx-0 px-8 md:px-0">
             {episodes.map((ep) => (
               <div
                 key={ep.id}
-                className="flex-none w-64 md:w-72 aspect-[9/16] relative group cursor-pointer snap-start overflow-hidden rounded-xl"
+                className="flex-none w-64 md:w-72 aspect-[9/16] relative group cursor-pointer snap-start overflow-hidden md:rounded-xl"
               >
                 <img
                   src={ep.img}
@@ -203,11 +200,11 @@ export default function Home() {
               View Full Gallery
             </a>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-6 h-auto md:h-[800px] -mx-8 md:mx-0">
             {bentoItems.map((item) => (
               <div
                 key={item.title}
-                className={`${item.colSpan} bg-surface-container-lowest relative overflow-hidden group rounded-xl`}
+                className={`${item.colSpan} bg-surface-container-lowest relative overflow-hidden group md:rounded-xl`}
               >
                 <img
                   src={item.img}

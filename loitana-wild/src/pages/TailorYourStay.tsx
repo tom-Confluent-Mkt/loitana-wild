@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const featureImg =
-  'https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g'
+const featureImg = '/images/1%20(15).jpeg'
 
 const catalog = [
   {
@@ -13,9 +12,10 @@ const catalog = [
     desc: 'A dedicated culinary artisan at your disposal. Includes bespoke menus, dietary tailoring, and all meal service from sunrise bush breakfasts to 5-course dinners.',
     price: '$150',
     unit: 'Daily Supplement',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ',
+    img: '/images/1%20(6).jpeg',
     aspect: 'aspect-[4/3]',
     bg: 'bg-surface-container-low',
+    radius: 'rounded-3xl',
   },
   {
     category: 'Exploration',
@@ -25,9 +25,10 @@ const catalog = [
     desc: 'Venture where vehicles cannot. Track the silent movements of the wild on foot with our expert naturalists. Focus on botany, tracking, and micro-ecosystems.',
     price: '$120',
     unit: 'Per Person',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uigqxrCtSp2lUg0YvAYH6_V_Ei8kfLkyhRwqKffOjnG1EoN0kwyREbp10qTML7inZrYZ2UXwEFGMGRAtx_A8llJ5u5aWyL0CqInl-mM0rwHWeL-20cHzPLk_p7xyZxg8N1gGpe4Elrlmjbdn4FO7M3ksxt2lq5rcu8MPWPcVmfJczzPXGCXbzyQrNDsWULNwdq7MGtU_gTfrh-IVsQPhw7fmlmLICB2IfS8cMor4KvD9OLij8q92PNY45UIAk3W8eqGKP9F5Mc6MQ',
+    img: '/images/1%20(11).jpeg',
     aspect: 'aspect-square',
     bg: 'bg-surface-container-high',
+    radius: 'rounded-2xl',
   },
   {
     category: 'Nocturnal Exploration',
@@ -37,10 +38,11 @@ const catalog = [
     desc: 'Witness the savannah come alive after dark. Using infrared technology and expert tracking, observe the elusive nocturnal predators of the conservancy.',
     price: '$180',
     unit: 'Per Vehicle',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0ujtXLVr4z8trnv0G46cb_BfD8TrLiaL9doVMnUX4_ZaRq1db-enTzJyTC6iTi-c9BfUZ0tnEbOAFu3S5EI1zn6DxMOU_JrQVoGRuV1CxukqJ2z-XKof-OkylQMHPwqt75EG7xR_q1hie8y9vMBMV-pc-oQcLItQIVuGEtdoU8QQhCtvqPXjKths90Z4J0sFbntlX8QA-p22La5-HSdVKito9FyKrov-VpMcTRt0HtJBXk-S9lCgldebbIJbbCVYgVcuow0QvosevA',
+    img: '/images/1%20(14).jpeg',
     aspect: 'aspect-square',
     bg: 'bg-primary',
     dark: true,
+    radius: 'rounded-3xl',
   },
   {
     category: 'Community',
@@ -50,9 +52,10 @@ const catalog = [
     desc: 'Meaningful engagement with the local community. Learn traditional crafts, oral histories, and pastoral traditions. 50% of fees go directly to the village fund.',
     price: '$60',
     unit: 'Donation Basis',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uiAlP0owS4wkwdVF0vstokwJ-0Mq3gxpUm_X6ETWbgT-lsBWEZereUP561w1Mgizz6CVcuuhJTtZlat0UXyCCfqG_VUEtoz976RLCF3pX61m6ts986Tsn0QGRNeWxFu-KHPPIWJ27fw9wjRAmibXBXVoOkr-__-mBQRtXKv1359p2bo7u3ifeFQkkYUct7qo5d3--8S7gCfBhqUFVqBIUtXJW5nj-nL1CNd6lKN_957pyWPGCC7wk_dOM_GMqqqPYBvLuEsrmL6fA',
+    img: '/images/1%20(10).jpeg',
     aspect: 'aspect-[3/4]',
     bg: 'bg-surface-container-high',
+    radius: 'rounded-2xl',
   },
   {
     category: 'Wellness',
@@ -65,6 +68,7 @@ const catalog = [
     img: featureImg,
     aspect: 'aspect-[4/3]',
     bg: 'bg-surface-container-low',
+    radius: 'rounded-3xl',
   },
   {
     category: 'Culinary',
@@ -74,9 +78,10 @@ const catalog = [
     desc: 'A fully catered breakfast setup on the sandy banks of the Loitana river. Fresh juices, campfire coffee, and hot dishes prepared on site as the sun rises.',
     price: '$85',
     unit: 'Per Guest',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uiT68b6cAQnfFIJENucNpp6sJGouOmdfinP6qTjiQ_lHEF2Rb_TYrsSUyRN2LlnNbW4bUngYHTJ1aF6HA4U2RxdaQMe2fjqie65LEra1Ni_i1fqyG6vR76ytF4i28exouvuv20SC5PX0X_Km9gSaMYZQfLLMgJ2bQYa7HGuHJlcs3W6iW8DzYv9mpQJdFCLjUVY-MiuUl2wfpZXRLIy7V8gwXGHJ1Vxo0aRu1rqD27PieMYLHA0KRHimwZ9XLmxxcgaZJcewAVU',
+    img: '/images/1%20(12).jpeg',
     aspect: 'aspect-[16/9]',
     bg: 'bg-surface-container-low',
+    radius: 'rounded-2xl',
   },
 ]
 
@@ -91,10 +96,14 @@ export default function TailorYourStay() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
-      <header className="relative w-full pt-20 pb-16 px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+      <header className="relative w-full pt-20 pb-16 px-8 max-w-7xl mx-auto overflow-hidden">
+        {/* Decorative blob */}
+        <div className="absolute -top-20 -right-20 w-96 h-96 bg-tertiary/20 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-1/3 w-64 h-64 bg-primary/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-end relative z-10">
           <div className="md:col-span-8">
-            <span className="font-label uppercase tracking-widest text-primary font-bold text-sm mb-4 block">
+            <span className="inline-flex items-center gap-2 font-label uppercase tracking-widest text-primary font-bold text-sm mb-6">
+              <span className="w-6 h-px bg-primary" />
               Personalized Luxury
             </span>
             <h1 className="font-headline text-6xl md:text-8xl tracking-tight leading-[0.9] mb-8">
@@ -103,7 +112,7 @@ export default function TailorYourStay() {
             </h1>
           </div>
           <div className="md:col-span-4 pb-2">
-            <p className="text-on-surface-variant text-lg leading-relaxed border-l-2 border-outline-variant pl-6">
+            <p className="text-on-surface-variant text-lg leading-relaxed pl-6 border-l-2 border-tertiary/60">
               We believe in the luxury of choice. Our base rates provide the canvas of your stay—affordable, serene,
               and deeply comfortable. From there, you paint your own journey with our curated bespoke upgrades.
             </p>
@@ -111,39 +120,44 @@ export default function TailorYourStay() {
         </div>
       </header>
 
-      {/* Feature Image */}
+      {/* Feature Image — organic bottom edge */}
       <section className="w-full mb-32">
-        <div className="h-[614px] w-full bg-surface-container-low overflow-hidden">
+        <div className="overflow-hidden rounded-b-[3rem] md:rounded-b-[5rem]">
           <img
             src={featureImg}
             alt="Scenic view of a rocky riverbed winding through the Loitana hills"
-            className="w-full h-full object-cover grayscale-[0.2]"
+            className="w-full h-[50vh] md:h-[614px] object-cover grayscale-[0.15]"
           />
         </div>
       </section>
 
       {/* The Bespoke Catalog */}
-      <section className="max-w-7xl mx-auto px-8 pb-32">
+      <section className="max-w-7xl mx-auto px-8 pb-32 relative">
+        {/* Background blobs */}
+        <div className="absolute top-0 -right-10 w-72 h-72 bg-secondary/5 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-40 -left-10 w-56 h-56 bg-tertiary/10 rounded-full blur-3xl pointer-events-none" />
+
         <div className="relative mb-20">
           <div className="absolute -top-10 -left-6 text-[8rem] font-headline text-primary/5 select-none leading-none z-0">
             Menu
           </div>
-          <div className="relative z-10 flex flex-col md:flex-row justify-between items-end gap-4">
+          <div className="relative z-10 flex flex-col md:flex-row justify-between items-end gap-6">
             <div className="max-w-xl">
               <h2 className="font-headline text-5xl tracking-tight mb-2">The Bespoke Catalog</h2>
               <p className="text-on-surface-variant font-headline italic text-xl">
                 Curated experiences to deepen your connection with the wild.
               </p>
             </div>
-            <div className="flex flex-wrap gap-3 pb-2">
+            {/* Pill-style filter buttons */}
+            <div className="flex flex-wrap gap-2 pb-2">
               {filters.map((filter) => (
                 <button
                   key={filter}
                   onClick={() => setActiveFilter(filter)}
-                  className={`px-4 py-2 border text-xs font-bold uppercase tracking-widest transition-colors font-label ${
+                  className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 font-label ${
                     activeFilter === filter
-                      ? 'bg-primary text-on-primary border-primary'
-                      : 'border-outline-variant hover:bg-primary hover:text-on-primary hover:border-primary'
+                      ? 'bg-primary text-on-primary shadow-md scale-105'
+                      : 'border border-outline-variant/60 hover:border-primary/50 hover:bg-primary/5'
                   }`}
                 >
                   {filter}
@@ -153,35 +167,37 @@ export default function TailorYourStay() {
           </div>
         </div>
 
-        <div className="columns-1 md:columns-2 lg:columns-3 gap-8">
+        <div className="columns-1 md:columns-2 lg:columns-3 gap-6">
           {visible.map((item) => (
             <div
               key={item.title}
-              className={`gallery-item group relative ${item.bg} rounded-lg overflow-hidden ${
-                item.dark ? '' : 'border border-outline-variant/30'
-              } transition-all duration-500 hover:shadow-2xl mb-8 break-inside-avoid`}
+              className={`gallery-item group relative ${item.bg} ${item.radius ?? 'rounded-2xl'} overflow-hidden ${
+                item.dark ? '' : 'border border-outline-variant/20'
+              } transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 mb-6 break-inside-avoid`}
             >
               <div className={`${item.aspect} overflow-hidden`}>
                 <img
                   src={item.img}
                   alt={item.title}
                   className={`w-full h-full object-cover ${
-                    item.dark ? 'opacity-60 group-hover:opacity-100' : 'grayscale-[0.3] group-hover:grayscale-0'
+                    item.dark ? 'opacity-60 group-hover:opacity-100' : 'grayscale-[0.2] group-hover:grayscale-0'
                   } group-hover:scale-105 transition-all duration-700`}
                 />
               </div>
               <div className="p-8">
                 <div className="flex justify-between items-start mb-4">
                   <span
-                    className={`text-[10px] font-bold uppercase tracking-[0.2em] ${
-                      item.dark ? 'text-on-primary/60' : 'text-primary'
+                    className={`inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full ${
+                      item.dark
+                        ? 'bg-white/10 text-on-primary/70'
+                        : 'bg-primary/10 text-primary'
                     }`}
                   >
                     {item.category}
                   </span>
                   <span
-                    className={`material-symbols-outlined ${
-                      item.dark ? 'text-on-primary/40' : 'text-outline-variant'
+                    className={`material-symbols-outlined text-xl ${
+                      item.dark ? 'text-on-primary/30' : 'text-outline-variant/60'
                     }`}
                   >
                     {item.icon}
@@ -216,8 +232,10 @@ export default function TailorYourStay() {
                       </span>
                     </span>
                     <button
-                      className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest hover:underline font-label ${
-                        item.dark ? 'text-on-primary' : 'text-primary'
+                      className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest rounded-full px-4 py-1.5 transition-all font-label ${
+                        item.dark
+                          ? 'text-on-primary border border-on-primary/30 hover:bg-white/10'
+                          : 'text-primary border border-primary/30 hover:bg-primary/5'
                       }`}
                     >
                       Add to Stay{' '}
@@ -232,8 +250,10 @@ export default function TailorYourStay() {
       </section>
 
       {/* Bespoke Philosophy */}
-      <section className="bg-surface-container-low py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      <section className="bg-surface-container-low py-32 overflow-hidden relative">
+        <div className="absolute top-20 right-20 w-48 h-48 bg-tertiary/15 rounded-full blur-2xl pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-64 h-64 bg-primary/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center relative z-10">
           <div className="relative">
             <div className="absolute -top-12 -left-12 text-[12rem] font-headline text-primary/5 select-none leading-none">
               Stay
@@ -251,26 +271,27 @@ export default function TailorYourStay() {
               {['Solar Powered Infrastructure', 'Zero Plastic Waste Policy', 'Direct Community Benefit'].map(
                 (item) => (
                   <div key={item} className="flex items-center gap-4">
-                    <span className="w-8 h-[1px] bg-primary" />
+                    <span className="w-2 h-2 rounded-full bg-primary shrink-0" />
                     <span className="font-label uppercase tracking-widest text-xs">{item}</span>
                   </div>
                 )
               )}
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] bg-surface-variant mt-12 rounded-lg overflow-hidden shadow-xl">
+          {/* Organic image pair */}
+          <div className="grid grid-cols-2 gap-4 items-end">
+            <div className="overflow-hidden shadow-xl rounded-[2.5rem] aspect-[3/4] mt-10">
               <img
-                src="https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ"
-                alt="Interior view"
-                className="w-full h-full object-cover grayscale-[0.2]"
+                src="/images/1%20(5).jpeg"
+                alt="Cottage perched on the cliff edge"
+                className="w-full h-full object-cover grayscale-[0.15] hover:scale-105 transition-transform duration-700"
               />
             </div>
-            <div className="aspect-[3/4] bg-surface-variant rounded-lg overflow-hidden shadow-xl">
+            <div className="overflow-hidden shadow-xl rounded-[2rem] rounded-tl-[4rem] aspect-[3/4]">
               <img
-                src="https://lh3.googleusercontent.com/aida/ADBb0ugaFtsByZ8vnRqrh4tNx1A81F4pycbW04NCCylKVf5bNjD2IWJKEfAzabUPQv_LRyH7Lhbf7s4CMwH6fEG6S1jelyyT1zskiX8Y94QQ1fp8A-FIP72HxQWsTfnIMxNwyj1seRlnTHsxMOogjgwdT4RSqqzhuWhfavHx655iflUo7DPtte2kQ4rQmRy9VtTKQYghFlU2oPx_-cRUHKIf4dysLwKL3Hdr56cFx3I1BTkIW_m8FsGJc6cNU5oljsoxqYjkATe7OEt85w"
-                alt="View from terrace"
-                className="w-full h-full object-cover grayscale-[0.2]"
+                src="/images/1%20(2).jpeg"
+                alt="Thatched hut at golden sunset"
+                className="w-full h-full object-cover grayscale-[0.15] hover:scale-105 transition-transform duration-700"
               />
             </div>
           </div>
@@ -278,19 +299,22 @@ export default function TailorYourStay() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 text-center max-w-3xl mx-auto px-8">
-        <h2 className="font-headline text-5xl mb-6">Ready to craft your journey?</h2>
-        <p className="text-on-surface-variant mb-12 text-lg">
+      <section className="py-32 text-center max-w-3xl mx-auto px-8 relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="w-96 h-96 bg-tertiary/10 rounded-full blur-3xl" />
+        </div>
+        <h2 className="font-headline text-5xl mb-6 relative z-10">Ready to craft your journey?</h2>
+        <p className="text-on-surface-variant mb-12 text-lg relative z-10">
           Connect with our concierge team to build a custom itinerary that reflects your rhythm and curiosity.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
           <Link
             to="/inquiry"
-            className="bg-primary text-on-primary px-10 py-4 font-headline text-xl font-bold rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-primary text-on-primary px-10 py-4 font-headline text-xl font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all"
           >
             Start Your Plan
           </Link>
-          <button className="border border-primary text-primary px-10 py-4 font-headline text-xl font-bold rounded-lg hover:bg-primary/5 transition-colors">
+          <button className="border border-primary/40 text-primary px-10 py-4 font-headline text-xl font-bold rounded-full hover:bg-primary/5 hover:border-primary transition-all">
             Download Rate Sheet
           </button>
         </div>

@@ -4,7 +4,8 @@
       "Bash(npm create *)",
       "Bash(npx tailwindcss *)",
       "Bash(npm run *)",
-      "Read(//c/Users/Tomas/.claude/projects/c--Users-Tomas-Desktop-Loitana-Wild/**)"
+      "Read(//c/Users/Tomas/.claude/projects/c--Users-Tomas-Desktop-Loitana-Wild/**)",
+      "Bash(start http://localhost:5173)"
     ]
   }
 }

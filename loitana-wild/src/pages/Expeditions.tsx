@@ -6,42 +6,42 @@ const expeditions = [
     title: 'Predator Tracking',
     desc: 'Follow the apex predators of the Mara on foot and by vehicle. Lions, leopards, and cheetahs in their undisturbed territory.',
     tag: 'Full Day',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uigqxrCtSp2lUg0YvAYH6_V_Ei8kfLkyhRwqKffOjnG1EoN0kwyREbp10qTML7inZrYZ2UXwEFGMGRAtx_A8llJ5u5aWyL0CqInl-mM0rwHWeL-20cHzPLk_p7xyZxg8N1gGpe4Elrlmjbdn4FO7M3ksxt2lq5rcu8MPWPcVmfJczzPXGCXbzyQrNDsWULNwdq7MGtU_gTfrh-IVsQPhw7fmlmLICB2IfS8cMor4KvD9OLij8q92PNY45UIAk3W8eqGKP9F5Mc6MQ',
+    img: '/images/1%20(14).jpeg',
   },
   {
     icon: 'flight_takeoff',
     title: 'Helicopter Rift Survey',
     desc: 'A private aerial survey of the Great Rift Valley escarpment. Witness the scale of the landscape from 2,000 feet.',
     tag: 'Half Day',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uiAlP0owS4wkwdVF0vstokwJ-0Mq3gxpUm_X6ETWbgT-lsBWEZereUP561w1Mgizz6CVcuuhJTtZlat0UXyCCfqG_VUEtoz976RLCF3pX61m6ts986Tsn0QGRNeWxFu-KHPPIWJ27fw9wjRAmibXBXVoOkr-__-mBQRtXKv1359p2bo7u3ifeFQkkYUct7qo5d3--8S7gCfBhqUFVqBIUtXJW5nj-nL1CNd6lKN_957pyWPGCC7wk_dOM_GMqqqPYBvLuEsrmL6fA',
+    img: '/images/1%20(13).jpeg',
   },
   {
     icon: 'bedtime',
     title: 'Night Drive & Star Walk',
     desc: 'After dark, the conservancy transforms. Track nocturnal predators, then lay beneath an untouched Kenyan sky.',
     tag: 'Evening',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0ujtXLVr4z8trnv0G46cb_BfD8TrLiaL9doVMnUX4_ZaRq1db-enTzJyTC6iTi-c9BfUZ0tnEbOAFu3S5EI1zn6DxMOU_JrQVoGRuV1CxukqJ2z-XKof-OkylQMHPwqt75EG7xR_q1hie8y9vMBMV-pc-oQcLItQIVuGEtdoU8QQhCtvqPXjKths90Z4J0sFbntlX8QA-p22La5-HSdVKito9FyKrov-VpMcTRt0HtJBXk-S9lCgldebbIJbbCVYgVcuow0QvosevA',
+    img: '/images/1%20(9).jpeg',
   },
   {
     icon: 'park',
     title: 'Bush Walk & Botanical Trail',
     desc: 'Cover terrain no vehicle can reach. A master tracker guides you through the micro-ecosystems of the Loitana ridge.',
     tag: 'Morning',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uhrVEufMdFgxJ6OXrNjuYxiPx5WLwMNfxCorS5a03uHqexeFVOune9lZw8hjk2wxFuyh2NrWXrLJnkjQSJmMuMBZOs3NABJnFVXgtkthOGaxQvKqEoH9s5NPZz6MG72pft19qPrzpqX53d6u25vyI_-5kjnkp-z5F6G8tWBpbHjbqWny6utsSxsWSWmKAm1adyOn0GQrXQ4LBQFbIgEhCedBgXKdsgjc0TwLD2j9tiJgXYNuRH9yNWYc5K2nu5FUSzydlmqFa0D6g',
+    img: '/images/1%20(11).jpeg',
   },
   {
     icon: 'groups',
     title: 'Maasai Community Walk',
     desc: 'Venture into the Loitana community. Learn fire-making, oral history, and the pastoral rhythms of the Mara.',
     tag: 'Full Day',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ',
+    img: '/images/1%20(8).jpeg',
   },
   {
     icon: 'photo_camera',
     title: 'Photography Safari',
     desc: 'A dedicated photographic vehicle and guide, timed to the golden hours. Prime positions, no other vehicles, no rush.',
     tag: 'Sunrise / Sunset',
-    img: 'https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g',
+    img: '/images/1%20(12).jpeg',
   },
 ]
 
@@ -52,7 +52,7 @@ export default function Expeditions() {
       <section
         className="relative min-h-[70vh] flex items-end overflow-hidden"
         style={{
-          backgroundImage: `url('https://lh3.googleusercontent.com/aida/ADBb0uigqxrCtSp2lUg0YvAYH6_V_Ei8kfLkyhRwqKffOjnG1EoN0kwyREbp10qTML7inZrYZ2UXwEFGMGRAtx_A8llJ5u5aWyL0CqInl-mM0rwHWeL-20cHzPLk_p7xyZxg8N1gGpe4Elrlmjbdn4FO7M3ksxt2lq5rcu8MPWPcVmfJczzPXGCXbzyQrNDsWULNwdq7MGtU_gTfrh-IVsQPhw7fmlmLICB2IfS8cMor4KvD9OLij8q92PNY45UIAk3W8eqGKP9F5Mc6MQ')`,
+          backgroundImage: `url('/images/1%20(7).jpeg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -74,8 +74,8 @@ export default function Expeditions() {
       </section>
 
       {/* Expedition Grid */}
-      <section className="py-32 px-8 bg-surface">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-32 px-0 md:px-8 bg-surface">
+        <div className="max-w-7xl mx-auto px-8 md:px-0">
           <div className="mb-20">
             <h2 className="font-headline text-5xl mb-4 tracking-tight">Choose Your Adventure</h2>
             <p className="text-on-surface-variant text-lg max-w-2xl">
@@ -83,11 +83,11 @@ export default function Expeditions() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 md:gap-8">
             {expeditions.map((exp) => (
               <div
                 key={exp.title}
-                className="group bg-surface-container-lowest overflow-hidden rounded-xl border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 hover:shadow-xl"
+                className="group bg-surface-container-lowest overflow-hidden md:rounded-xl border-b border-outline-variant/20 md:border hover:border-primary/30 transition-all duration-500 hover:shadow-xl"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 
 const imgs = {
-  hero: 'https://lh3.googleusercontent.com/aida/ADBb0ujrRQkF7Y9McKI7aTr6lsKw4N_CrooM5IxqsIs03krLzI1u0yGVkn_EJG8A13xRaolwIHXssJNqwbAU_3-MGBz1vOfuB3mwL2_8XDomfeN0EwJ71UjPX-SHEaCfeYD8xBmVkCN4TpighIsFE5PDbPOlEVBmly4Rxc7VtFQW05nTdmbocv0diQdkEixdSfVloWvr1dLY0QtqyjkcuH3x9zvJirBhHt6qTSd0g4HWxwdo-L8uEFF5whsY1fxYz5WEfgb-dn8bfhhTnQ',
-  stone: 'https://lh3.googleusercontent.com/aida/ADBb0uiuO29ADVTyAO1hMpDJ41okUHaHMyMDTirip4JSvhfuRoc0OUbINrB0dHJyT0O0W1hG0txNW2uWVkqFlC6q0UO8uMEQBZNVuqa5Yl9CfawN9uW-syNyNkXZ_7M9aAce4_dAsxJP1ix2Wsvle5DhBWHvYK_2QA3DAC6sziQWpEC4kxMT1Xhc5YWvbHlSw__LLA2-mvDimzTzLIuj0B5My5AEWcYmFEUpP2OKc4OEpZjWX3YA0pPZxNSsz2PxMzzOt9PyefDfuNZKDQ',
-  detail: 'https://lh3.googleusercontent.com/aida/ADBb0ujFlqVecv-glzOx3yi7O2VHtEttnKUn837vjofaF8Y0pehh2C_yUNJ9eZr50smkcLW3vui3SVLctw78K8EPvaoUeLTFWGG-2EmOrJU4COXN6zRNr7JXAhWjhacPAYY9Uo3yXxbhMYS1rtuTLp_Kh8nLTNAnWvaAqsRCH7K36zPErZNbx_OrzojZm8bkzNDZxrtwOG6XekcVqQVQTvSU6V0QD2QtDeDaxJMYsdu9p94TSKJiJiuc5MT-oaSthKA3yoReV94OLt5PdQ',
-  trekker: 'https://lh3.googleusercontent.com/aida/ADBb0uhrVEufMdFgxJ6OXrNjuYxiPx5WLwMNfxCorS5a03uHqexeFVOune9lZw8hjk2wxFuyh2NrWXrLJnkjQSJmMuMBZOs3NABJnFVXgtkthOGaxQvKqEoH9s5NPZz6MG72pft19qPrzpqX53d6u25vyI_-5kjnkp-z5F6G8tWBpbHjbqWny6utsSxsWSWmKAm1adyOn0GQrXQ4LBQFbIgEhCedBgXKdsgjc0TwLD2j9tiJgXYNuRH9yNWYc5K2nu5FUSzydlmqFa0D6g',
-  river: 'https://lh3.googleusercontent.com/aida/ADBb0uirHVL7yAIlyXdUlAHVJj0a3mOuzY73u5GeQThZuCYd8_CiFmKw-9nel3L8lCEpr_ZW8zvEgP6s84erGeVAByEQKRssrvni6HxNubHQc5Y02qSUnh7o_A3Mi1CIZoFE3LjxneFVdHVL95fJoIpm-TQc26Dw6AjSEpa7ZPKA-c3YYztkrbhBmknSTGc0shekyWuxRV3gMSuGt5IC7mkSSfpj8EbeKMUE_Yg1FATGaeEfTW-LNkPr1AFrJo3pbaSJXR36yTUSOtov2g',
-  sunset: 'https://lh3.googleusercontent.com/aida/ADBb0uigqxrCtSp2lUg0YvAYH6_V_Ei8kfLkyhRwqKffOjnG1EoN0kwyREbp10qTML7inZrYZ2UXwEFGMGRAtx_A8llJ5u5aWyL0CqInl-mM0rwHWeL-20cHzPLk_p7xyZxg8N1gGpe4Elrlmjbdn4FO7M3ksxt2lq5rcu8MPWPcVmfJczzPXGCXbzyQrNDsWULNwdq7MGtU_gTfrh-IVsQPhw7fmlmLICB2IfS8cMor4KvD9OLij8q92PNY45UIAk3W8eqGKP9F5Mc6MQ',
+  hero: '/images/1%20(4).jpeg',
+  stone: '/images/1%20(3).jpeg',
+  detail: '/images/1%20(6).jpeg',
+  trekker: '/images/1%20(5).jpeg',
+  river: '/images/1%20(15).jpeg',
+  sunset: '/images/1%20(11).jpeg',
 }
 
 const features = [
@@ -67,7 +67,7 @@ export default function TheResidence() {
 
           {/* Right */}
           <div className="md:col-span-6 lg:col-span-7 relative">
-            <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/3] w-full overflow-hidden rounded-xl editorial-shadow">
+            <div className="relative aspect-[4/5] md:aspect-square lg:aspect-[4/3] w-full overflow-hidden md:rounded-xl editorial-shadow -mx-8 md:mx-0">
               <img src={imgs.hero} alt="The authentic House on the Rock exterior" className="w-full h-full object-cover" />
               <div className="absolute bottom-12 -left-6 bg-surface p-10 hidden lg:block rounded-xl editorial-shadow border border-outline-variant/10">
                 <p className="font-headline text-xl italic text-primary leading-tight">
@@ -82,20 +82,20 @@ export default function TheResidence() {
 
       {/* Gallery Grid — Asymmetric Bento */}
       <section className="py-32 px-8 max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[1200px]">
-          <div className="md:col-span-8 overflow-hidden rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-8 h-auto md:h-[1200px] -mx-8 md:mx-0">
+          <div className="md:col-span-8 overflow-hidden md:rounded-xl">
             <img
               src={imgs.stone}
               alt="Stone facade and terrace"
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out rounded-xl"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out"
             />
           </div>
-          <div className="md:col-span-4 grid grid-rows-2 gap-8">
-            <div className="overflow-hidden rounded-xl">
+          <div className="md:col-span-4 grid grid-rows-2 gap-0 md:gap-8">
+            <div className="overflow-hidden md:rounded-xl">
               <img
                 src={imgs.detail}
                 alt="Cottage details"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out rounded-xl"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out"
               />
             </div>
             <div className="bg-surface-container-low p-12 flex flex-col justify-center rounded-xl">
@@ -106,11 +106,11 @@ export default function TheResidence() {
               </p>
             </div>
           </div>
-          <div className="md:col-span-4 overflow-hidden rounded-xl">
-            <img src={imgs.trekker} alt="House environment detail" className="w-full h-full object-cover rounded-xl" />
+          <div className="md:col-span-4 overflow-hidden md:rounded-xl">
+            <img src={imgs.trekker} alt="House environment detail" className="w-full h-full object-cover" />
           </div>
-          <div className="md:col-span-8 overflow-hidden rounded-xl">
-            <img src={imgs.hero} alt="Wide view of the house on the rock" className="w-full h-full object-cover rounded-xl" />
+          <div className="md:col-span-8 overflow-hidden md:rounded-xl">
+            <img src={imgs.hero} alt="Wide view of the house on the rock" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -119,11 +119,11 @@ export default function TheResidence() {
       <section className="bg-surface-container-low py-40 px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
           <div className="md:w-1/2 order-2 md:order-1">
-            <div className="relative editorial-shadow overflow-hidden rounded-xl">
+            <div className="relative editorial-shadow overflow-hidden md:rounded-xl -mx-8 md:mx-0">
               <img
                 src={imgs.river}
                 alt="Wide river view of the conservancy"
-                className="w-full aspect-[4/5] object-cover rounded-xl"
+                className="w-full aspect-[4/5] object-cover"
               />
               <div className="absolute bottom-8 left-8 bg-surface/95 backdrop-blur-md p-8 max-w-xs border border-outline-variant/20 rounded-xl">
                 <span className="font-headline text-5xl block font-bold text-primary mb-2">4,000</span>
