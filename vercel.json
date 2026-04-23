@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd loitana-wild && npm install && npm run build",
+  "outputDirectory": "loitana-wild/dist",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
