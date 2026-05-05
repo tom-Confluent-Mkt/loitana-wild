@@ -3,7 +3,7 @@ import { useReveal } from '../hooks/useReveal'
 
 const heroImg = '/images/1%20(1).jpeg'
 const sanctuaryImg = '/images/1%20(3).jpeg'
-const ctaImg = '/images/1%20(7).jpeg'
+const ctaImg = '/images/sunset-mountains.jpg'
 
 const episodes = [
   { id: '01', title: 'Twilight Migration', img: '/images/1%20(2).jpeg', alt: 'The cottage nestled in nature at golden hour' },
@@ -54,7 +54,7 @@ export default function Home() {
               The Exclusive Frontier
             </span>
             <h1 className="reveal text-6xl md:text-8xl font-headline text-white leading-[1.05] tracking-tight mb-8" style={{ transitionDelay: '100ms' }}>
-              Loitana Wild: 4,000 Hectares. One Guest.{' '}
+              Loitana Wild: 5,300 Acres. One Guest.{' '}
               <span className="italic">You.</span>
             </h1>
             <div className="reveal flex flex-col md:flex-row gap-4 md:gap-6" style={{ transitionDelay: '200ms' }}>
@@ -84,18 +84,18 @@ export default function Home() {
               Your Private Sanctuary
             </h2>
             <p className="text-xl text-on-surface-variant font-light leading-relaxed">
-              At Loitana Wild, we have dismantled the hotel model. We offer 4,000 hectares of pristine Kenyan
-              wilderness, and we only ever host one party at a time.
+              At Loitana Wild, we have dismantled the hotel model. We offer 5,300 acres of pristine wilderness on the
+              Samburu/Laikipia border, and we only ever host one party at a time.
             </p>
             <p className="text-on-surface-variant leading-loose">
-              Whether you are a solo adventurer, a couple seeking solitude, or a family reconnecting, the entire estate
-              is yours. No shared dining rooms, no communal pools, no schedules but your own. This is true
-              exclusivity—rugged luxury at the edge of the world.
+              Sitting 2,000 feet above the Samburu plains with views stretching to the Ewaso Nyiro river, the entire
+              estate is yours. No roads cross the conservancy—just a single sandy track—preserving the land's integrity
+              and your absolute solitude. Up to 12 guests across 4 cottages, with the Samburu as your guides.
             </p>
             <div className="pt-6 grid grid-cols-2 gap-8">
               <div>
-                <span className="block text-3xl font-headline text-primary">4,000</span>
-                <span className="text-xs uppercase tracking-widest text-outline">Hectares of Freedom</span>
+                <span className="block text-3xl font-headline text-primary">5,300</span>
+                <span className="text-xs uppercase tracking-widest text-outline">Acres of Freedom</span>
               </div>
               <div>
                 <span className="block text-3xl font-headline text-primary">100%</span>
@@ -243,8 +243,8 @@ export default function Home() {
                 </span>
                 <h3 className="text-3xl font-headline mb-6 text-on-surface">Affordable Luxury Base</h3>
                 <p className="text-on-surface-variant mb-8 leading-relaxed">
-                  The house, the land, and the staff are yours at a transparent base rate. Start your story from a
-                  place of grounded comfort.
+                  The lodge, the land, and the staff are yours — including a resident cook who prepares all your meals.
+                  Loitana Wild is self-catered: bring your own provisions and let us take care of the rest.
                 </p>
               </div>
               <div className="pt-8 border-t border-outline-variant/10">
@@ -264,7 +264,7 @@ export default function Home() {
                 <h3 className="text-3xl font-headline mb-6 text-white">Bespoke Services</h3>
                 <ul className="space-y-4 text-white/90">
                   {[
-                    { icon: 'restaurant', label: 'Private Chef & Full Board Catering' },
+                    { icon: 'restaurant', label: 'Full Catering Service & Refined Chef' },
                     { icon: 'explore', label: 'Expert Wildlife Guides & Expeditions' },
                     { icon: 'flight_takeoff', label: 'Helicopter Transfers & Safari Logistics' },
                   ].map((item) => (
@@ -297,7 +297,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-8 relative z-10 w-full">
           <div className="flex flex-col items-center text-center">
             <h2 className="reveal text-5xl md:text-7xl font-headline mb-8 max-w-4xl italic text-white">
-              Your 4,000 hectares are waiting.
+              Your 5,300 acres are waiting.
             </h2>
             <p className="reveal text-xl max-w-2xl mb-12 text-white/90" style={{ transitionDelay: '100ms' }}>
               Disconnect from the noise. Reconnect with the rhythm of the African wild in total privacy.

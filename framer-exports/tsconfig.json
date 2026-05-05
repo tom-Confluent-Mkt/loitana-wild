@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "react": ["../loitana-wild/node_modules/react"],
+      "react/*": ["../loitana-wild/node_modules/react/*"],
+      "framer-motion": ["../loitana-wild/node_modules/framer-motion"],
+      "framer-motion/*": ["../loitana-wild/node_modules/framer-motion/*"]
+    },
+    "typeRoots": [
+      "../loitana-wild/node_modules/@types",
+      "../loitana-wild/node_modules"
+    ]
+  },
+  "include": ["**/*.tsx", "**/*.ts"]
+}

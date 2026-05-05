@@ -7,6 +7,7 @@ import TheResidence from './pages/TheResidence'
 import Expeditions from './pages/Expeditions'
 import TailorYourStay from './pages/TailorYourStay'
 import Inquiry from './pages/Inquiry'
+import Conservation from './pages/Conservation'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -25,6 +26,7 @@ function Layout() {
         <Route path="/expeditions" element={<Expeditions />} />
         <Route path="/tailor-your-stay" element={<TailorYourStay />} />
         <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="/conservation" element={<Conservation />} />
       </Routes>
       <Footer />
     </div>

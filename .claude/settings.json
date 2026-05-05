@@ -1,11 +1,15 @@
 {
+  "enabledMcpjsonServers": ["framer"],
   "permissions": {
     "allow": [
       "Bash(npm create *)",
       "Bash(npx tailwindcss *)",
       "Bash(npm run *)",
       "Read(//c/Users/Tomas/.claude/projects/c--Users-Tomas-Desktop-Loitana-Wild/**)",
-      "Bash(start http://localhost:5173)"
+      "Bash(start http://localhost:5173)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

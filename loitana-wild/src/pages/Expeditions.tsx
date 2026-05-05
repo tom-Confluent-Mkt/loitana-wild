@@ -5,43 +5,43 @@ const expeditions = [
   {
     icon: 'explore',
     title: 'Predator Tracking',
-    desc: 'Follow the apex predators of the Mara on foot and by vehicle. Lions, leopards, and cheetahs in their undisturbed territory.',
+    desc: 'Follow the apex predators of the conservancy on foot and by vehicle. Lions, leopards, African wild dogs (striped wolves), and more in their undisturbed territory.',
     tag: 'Full Day',
     img: '/images/1%20(14).jpeg',
   },
   {
     icon: 'flight_takeoff',
-    title: 'Helicopter Rift Survey',
-    desc: 'A private aerial survey of the Great Rift Valley escarpment. Witness the scale of the landscape from 2,000 feet.',
+    title: 'Helicopter Aerial Survey',
+    desc: 'A private aerial survey over the Samburu plains and the Ewaso Nyiro river. Witness the scale of the Kirisia–Laikipia corridor from above.',
     tag: 'Half Day',
     img: '/images/1%20(13).jpeg',
   },
   {
-    icon: 'bedtime',
-    title: 'Night Drive & Star Walk',
-    desc: 'After dark, the conservancy transforms. Track nocturnal predators, then lay beneath an untouched Kenyan sky.',
+    icon: 'visibility',
+    title: 'Elephant Blind',
+    desc: 'As evening falls, make your way to the elephant blind and watch the abundant wildlife gather at the waterhole for their evening drink. An exhilarating, close encounter.',
     tag: 'Evening',
     img: '/images/1%20(9).jpeg',
   },
   {
     icon: 'park',
-    title: 'Bush Walk & Botanical Trail',
-    desc: 'Cover terrain no vehicle can reach. A master tracker guides you through the micro-ecosystems of the Loitana ridge.',
-    tag: 'Morning',
+    title: 'Bush Walk & Ewaso Nyiro',
+    desc: 'Hike deep into the conservancy to the Ewaso Nyiro river. Spend a night or two in the bush camp, learning to read animal tracks and immersed in the sounds of the wilderness.',
+    tag: 'Multi-Day',
     img: '/images/1%20(11).jpeg',
   },
   {
     icon: 'groups',
-    title: 'Maasai Community Walk',
-    desc: 'Venture into the Loitana community. Learn fire-making, oral history, and the pastoral rhythms of the Mara.',
+    title: 'Samburu Community Walk',
+    desc: 'Venture into the Nkoteiya community. As the original guardians of this land, the Samburu share oral histories, pastoral traditions, and their deep knowledge of the landscape.',
     tag: 'Full Day',
     img: '/images/1%20(8).jpeg',
   },
   {
-    icon: 'photo_camera',
-    title: 'Photography Safari',
-    desc: 'A dedicated photographic vehicle and guide, timed to the golden hours. Prime positions, no other vehicles, no rush.',
-    tag: 'Sunrise / Sunset',
+    icon: 'star',
+    title: 'Stargazing',
+    desc: 'When night blankets the valley, lie back and let the constellations tell their stories — from the Southern Cross to the brush stroke of the Milky Way overhead.',
+    tag: 'Night',
     img: '/images/1%20(12).jpeg',
   },
 ]
@@ -70,7 +70,7 @@ export default function Expeditions() {
           </h1>
           <p className="reveal text-white/80 text-xl max-w-xl font-light leading-relaxed" style={{ transitionDelay: '100ms' }}>
             Every expedition at Loitana Wild is private by design. No shared vehicles, no fixed schedules—just you, an
-            expert guide, and 4,000 hectares of untouched Africa.
+            expert guide, and 5,300 acres of untouched Africa.
           </p>
         </div>
       </section>
@@ -115,6 +115,20 @@ export default function Expeditions() {
         </div>
       </section>
 
+      {/* Extra Activities */}
+      <section className="py-12 px-8 bg-surface-container-low border-y border-outline-variant/15">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-10">
+          <span className="font-label text-[10px] uppercase tracking-[0.3em] text-primary font-bold shrink-0">Also available</span>
+          <div className="flex flex-wrap gap-3">
+            {['Game Drives', 'Manyata Village Visits', 'Local Market Shopping', 'Helicopter Tours'].map((item) => (
+              <span key={item} className="font-label text-xs uppercase tracking-widest border border-outline-variant/40 px-4 py-2 rounded-full text-on-surface-variant">
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy Strip */}
       <section className="bg-primary py-24 px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
@@ -124,8 +138,8 @@ export default function Expeditions() {
               <span className="italic">No exceptions.</span>
             </h2>
             <p className="text-on-primary/80 text-lg leading-relaxed">
-              We operate a strict one-party policy across the entire conservancy. When you venture out, every track you
-              follow belongs only to you.
+              We operate a strict one-party policy across the entire 5,300-acre conservancy. When you venture out, every
+              track you follow belongs only to you.
             </p>
           </div>
           <Link

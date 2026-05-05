@@ -6,11 +6,11 @@ const featureImg = '/images/1%20(15).jpeg'
 
 const catalog = [
   {
-    category: 'Culinary Excellence',
+    category: 'Culinary Upgrade',
     filterKey: 'Culinary',
     icon: 'restaurant',
-    title: 'Private Chef & Custom Catering',
-    desc: 'A dedicated culinary artisan at your disposal. Includes bespoke menus, dietary tailoring, and all meal service from sunrise bush breakfasts to 5-course dinners.',
+    title: 'Full Catering & Refined Chef',
+    desc: 'Loitana Wild is self-catered by default — your resident cook prepares the food you bring. Upgrade to a full catering service: we source all provisions and bring in a refined chef for bespoke menus and full meal service.',
     price: '$150',
     unit: 'Daily Supplement',
     img: '/images/1%20(6).jpeg',
@@ -49,8 +49,8 @@ const catalog = [
     category: 'Community',
     filterKey: 'Community',
     icon: 'groups',
-    title: 'Maasai Cultural Immersion',
-    desc: 'Meaningful engagement with the local community. Learn traditional crafts, oral histories, and pastoral traditions. 50% of fees go directly to the village fund.',
+    title: 'Samburu Cultural Immersion',
+    desc: 'Meaningful engagement with the Samburu — the original guardians of Nkoteiya. Visit the manyata, learn pastoral traditions, oral histories, and fire-making. 50% of fees go directly to the community fund.',
     price: '$60',
     unit: 'Donation Basis',
     img: '/images/1%20(10).jpeg',
@@ -115,8 +115,8 @@ export default function TailorYourStay() {
           </div>
           <div className="md:col-span-4 pb-2">
             <p className="text-on-surface-variant text-lg leading-relaxed pl-6 border-l-2 border-tertiary/60">
-              We believe in the luxury of choice. Our base rates provide the canvas of your stay—affordable, serene,
-              and deeply comfortable. From there, you paint your own journey with our curated bespoke upgrades.
+              Loitana Wild is self-catered: bring your own provisions and our resident cook prepares everything. From
+              there, layer in exactly what you want — guides, experiences, a refined chef, or nothing at all.
             </p>
           </div>
         </div>

@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__framer__readCodeFile",
+      "mcp__framer__createPage",
+      "mcp__framer__createCodeFile",
+      "mcp__framer__getNodeXml",
+      "mcp__framer__updateXmlForNode",
+      "mcp__framer__zoomIntoView",
+      "mcp__framer__getProjectWebsiteUrl",
+      "mcp__framer__updateCodeFile",
+      "mcp__framer__getProjectXml"
+    ]
+  }
+}

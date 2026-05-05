@@ -13,22 +13,29 @@ const imgs = {
 const features = [
   {
     icon: 'restaurant',
-    title: 'Bespoke Gastronomy',
-    desc: 'Full board includes all meals tailored to your preference, from bush breakfasts to candlelit terrace dinners.',
-    items: ['Private Chef', 'Fine Wines & Spirits', 'Organic Produce'],
+    title: 'Self-Catered Living',
+    desc: 'A resident cook is included and will prepare all your meals from the provisions you bring. Full catering service or a more refined chef can be arranged on request.',
+    items: ['Resident Cook Included', 'Full Catering on Request', 'Refined Chef Available'],
   },
   {
     icon: 'park',
     title: 'Private Expeditions',
-    desc: 'Unlimited game drives and guided bush walks on your own schedule. No fixed times, no other tourists.',
-    items: ['Custom 4x4 Vehicle', 'Master Tracker', 'Night Safaris'],
+    desc: 'Guided walks through the conservancy on your own schedule — no fixed times, no other tourists. The Samburu people are your guides to this landscape.',
+    items: ['Samburu Expert Guides', 'Elephant Blind Viewings', 'Ewaso Nyiro Bush Camp'],
   },
   {
     icon: 'spa',
     title: 'Wild Wellness',
-    desc: 'Full access to the infinity pool, gym facilities, and daily laundry service for a seamless retreat.',
-    items: ['Infinity Pool', 'Outdoor Showers', 'Butler Service'],
+    desc: 'Yoga platforms, a fully equipped gym, and a pool with sweeping views over the conservancy. Walk freely around the lodge; a ranger escorts you after dark.',
+    items: ['Swimming Pool', 'Yoga Platforms', 'Gym Facilities'],
   },
+]
+
+const rooms = [
+  { name: 'Room 1', beds: '1 King + 3 Singles', bath: '1 Bathroom', note: '2 bedrooms' },
+  { name: 'Room 2', beds: '1 King bed', bath: '1 Bathroom', note: 'Optional extra single' },
+  { name: 'Room 3', beds: '1 King bed', bath: '1 Bathroom', note: 'Optional extra single' },
+  { name: 'Room 4', beds: '1 King bed', bath: '1 Bathroom', note: 'Optional 2 extra singles' },
 ]
 
 export default function TheResidence() {
@@ -48,14 +55,14 @@ export default function TheResidence() {
               The House <br /> <span className="italic">on the</span> Rock
             </h1>
             <p className="font-body text-xl md:text-2xl text-on-surface-variant max-w-lg leading-relaxed italic mb-12">
-              An architectural marvel sculpted into the ancient granite of the Lolokwe escarpment, offering absolute
-              seclusion in the heart of Northern Kenya.
+              An architectural marvel sculpted into the ancient granite of the Karisia Hills, south of Samburu —
+              offering absolute seclusion on the Laikipia border.
             </p>
             <div className="flex flex-col sm:flex-row gap-8 items-start sm:items-center">
               <div className="flex flex-col">
-                <span className="font-headline text-5xl font-bold text-primary mb-1">4,000</span>
+                <span className="font-headline text-5xl font-bold text-primary mb-1">5,300</span>
                 <span className="font-label uppercase text-[9px] tracking-[0.2em] font-bold text-on-surface-variant">
-                  Hectares of Wilderness
+                  Acres of Wilderness
                 </span>
               </div>
               <div className="h-10 w-px bg-outline-variant hidden sm:block" />
@@ -123,6 +130,49 @@ export default function TheResidence() {
         </div>
       </section>
 
+      {/* The Rooms */}
+      <section className="py-24 md:py-32 px-8 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12 reveal">
+            <span className="font-label uppercase tracking-[0.3em] text-[10px] text-primary font-bold block mb-4">Accommodation</span>
+            <h2 className="font-headline text-4xl md:text-5xl tracking-tighter">The Rooms</h2>
+            <p className="text-on-surface-variant mt-3 max-w-lg">
+              Four private cottages of local stone with thatched roofs, verandahs, and en-suite bathrooms.
+              Up to 12 guests across all rooms; two additional tents available if needed.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            {rooms.map((room, i) => (
+              <div
+                key={room.name}
+                className="bg-surface-container-low p-8 rounded-xl border border-outline-variant/20 reveal"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <span className="font-label text-[10px] uppercase tracking-[0.3em] text-primary font-bold block mb-3">{room.name}</span>
+                <p className="font-headline text-2xl mb-1">{room.beds}</p>
+                <p className="text-sm text-on-surface-variant mb-3">{room.bath}</p>
+                <span className="inline-block text-[10px] font-label uppercase tracking-widest bg-primary/10 text-primary px-3 py-1 rounded-full">{room.note}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 reveal">
+            {[
+              { icon: 'bolt', text: '100% Solar Powered' },
+              { icon: 'water_drop', text: 'Community Borehole & Spring Water' },
+              { icon: 'payments', text: 'KES 2,000 Conservation Fee / Person / Day' },
+            ].map((item) => (
+              <div key={item.text} className="flex items-center gap-3 bg-surface-container-low px-6 py-4 rounded-xl border border-outline-variant/20">
+                <span className="material-symbols-outlined text-primary text-xl">{item.icon}</span>
+                <span className="font-label text-xs uppercase tracking-widest">{item.text}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-outline italic reveal">
+            Walk freely around the lodge during the day. After dark, rangers escort guests back to their rooms — the conservancy is unfenced.
+          </p>
+        </div>
+      </section>
+
       {/* Total Privacy */}
       <section className="bg-surface-container-low py-24 md:py-40 px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 md:gap-24">
@@ -134,8 +184,8 @@ export default function TheResidence() {
                 className="w-full aspect-[4/3] md:aspect-[4/5] object-cover"
               />
               <div className="absolute bottom-8 left-8 bg-surface/95 backdrop-blur-md p-6 md:p-8 max-w-xs border border-outline-variant/20 rounded-xl">
-                <span className="font-headline text-4xl md:text-5xl block font-bold text-primary mb-2">4,000</span>
-                <span className="font-label uppercase text-[10px] tracking-[0.3em] font-bold">Hectares of Wilderness</span>
+                <span className="font-headline text-4xl md:text-5xl block font-bold text-primary mb-2">5,300</span>
+                <span className="font-label uppercase text-[10px] tracking-[0.3em] font-bold">Acres of Wilderness</span>
               </div>
             </div>
           </div>
@@ -145,7 +195,8 @@ export default function TheResidence() {
             </h2>
             <p className="font-body text-xl text-on-surface-variant mb-10 md:mb-12 leading-relaxed italic">
               Loitana Wild is not a hotel; it is your private estate. When you book the House on the Rock, you are the
-              only guests on the entire 4,000-hectare conservancy.
+              only guests on the entire 5,300-acre conservancy. With no roads crossing the land — just a single sandy
+              access track — the wilderness remains completely intact around you.
             </p>
             <div className="space-y-8 md:space-y-10">
               {[

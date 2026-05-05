@@ -220,8 +220,8 @@ export default function Inquiry() {
             <div className="p-8 bg-surface-container-high border-l-4 border-primary rounded-DEFAULT">
               <h4 className="font-headline text-xl text-on-surface mb-2">Finding the Wild</h4>
               <p className="font-body text-sm text-on-surface-variant leading-relaxed">
-                Located on the border of the Maasai Mara, Loitana Wild offers exclusive access to the conservancy, far
-                from the crowds. We provide private transfers from Nairobi or Ol Kiombo Airstrip.
+                Located on the Samburu/Laikipia border, south of the Karisia Hills, Loitana Wild offers exclusive access
+                to the Nkoteiya conservancy, far from the crowds. We provide private transfers from Nairobi or Wilson Airport.
               </p>
             </div>
 

@@ -6,13 +6,18 @@ export default function Footer() {
           © 2025 Loitana Wild. The Breath of the Savannah.
         </div>
         <div className="flex flex-wrap justify-center gap-8">
-          {['Conservation', 'Privacy Policy', 'Contact Us', 'Press Kit'].map((item) => (
+          {[
+            { label: 'Conservation', href: '/conservation' },
+            { label: 'Privacy Policy', href: '#' },
+            { label: 'Contact Us', href: '/inquiry' },
+            { label: 'Press Kit', href: '#' },
+          ].map(({ label, href }) => (
             <a
-              key={item}
-              href="#"
+              key={label}
+              href={href}
               className="font-label text-sm uppercase tracking-widest text-outline hover:text-primary underline transition-all opacity-80 hover:opacity-100"
             >
-              {item}
+              {label}
             </a>
           ))}
         </div>
